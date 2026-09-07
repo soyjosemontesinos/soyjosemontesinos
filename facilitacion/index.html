@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Facilitación Emocional | Jose Montesinos</title>
+  <meta
+    name="description"
+    content="Facilitación Emocional con Jose Montesinos: acompañamiento para el autoconocimiento, el aprendizaje y el desarrollo de competencias emocionales."
+  />
+
+  <style>
+    :root {
+      --bg: #efe6e4;
+      --tinta: #1f2328;
+      --apagado: #6f664c;
+      --linea: #cfc8bf;
+      --suave: rgba(255, 255, 255, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--tinta);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    .navegacion {
+      width: 100%;
+      padding: 26px 38px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 22px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+
+    .menu a,
+    .menu span {
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    .menu a:hover,
+    .menu .activo {
+      color: var(--tinta);
+    }
+
+    .menu .proximamente {
+      opacity: 0.72;
+      cursor: default;
+    }
+
+    .hero {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 90px 28px 55px;
+      text-align: center;
+    }
+
+    .ceja {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      color: var(--apagado);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .entradilla {
+      max-width: 690px;
+      margin: 26px auto 0;
+      font-size: 1.08rem;
+      color: var(--apagado);
+    }
+
+    .separador {
+      width: 64px;
+      height: 1px;
+      background: var(--linea);
+      margin: 34px auto;
+    }
+
+    .menu-interno {
+      max-width: 960px;
+      margin: 0 auto 60px;
+      padding: 18px 28px;
+      border-top: 1px solid var(--linea);
+      border-bottom: 1px solid var(--linea);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 24px;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+    }
+
+    .menu-interno a {
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    .menu-interno a:hover {
+      color: var(--tinta);
+    }
+
+    .contenido {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 28px 90px;
+    }
+
+    section {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--linea);
+      scroll-margin-top: 30px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 32px 0 8px;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .destacado {
+      margin: 30px 0;
+      padding: 22px 26px;
+      border-left: 2px solid var(--apagado);
+      background: var(--suave);
+      font-size: 1.08rem;
+    }
+
+    .nota {
+      color: var(--apagado);
+      font-style: italic;
+    }
+
+    .movimientos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 32px 0;
+    }
+
+    .movimiento {
+      padding: 24px 20px;
+      border: 1px solid var(--linea);
+      border-radius: 14px;
+      background: var(--suave);
+    }
+
+    .movimiento h3 {
+      margin-top: 0;
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .area {
+      padding: 22px;
+      border-top: 1px solid var(--linea);
+    }
+
+    .area h3 {
+      margin-top: 0;
+    }
+
+    .faq {
+      padding: 22px 0;
+      border-top: 1px solid var(--linea);
+    }
+
+    .faq h3 {
+      margin: 0 0 10px;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 22px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    .volver:hover {
+      color: var(--tinta);
+    }
+
+    @media (max-width: 700px) {
+      .navegacion {
+        padding: 22px 20px 0;
+      }
+
+      .menu {
+        gap: 8px 14px;
+        font-size: 0.72rem;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+
+      .movimientos,
+      .areas {
+        grid-template-columns: 1fr;
+      }
+
+      .contenido {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body id="arriba">
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <div class="menu">
+      <a href="/">Inicio</a>
+      <a class="activo" href="/facilitacion/">Facilitación emocional</a>
+      <span class="proximamente">Reiki</span>
+      <span class="proximamente">Experiencias</span>
+      <a href="/libro/">Libros</a>
+      <span class="proximamente">Sobre mí</span>
+      <a href="mailto:hola@soyjosemontesinos.es">Contacto</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="ceja">Facilitación emocional</div>
+
+    <h1>Comprender mejor lo que te ocurre</h1>
+
+    <p class="entradilla">
+      Un espacio para comprender mejor lo que estás viviendo,
+      desarrollar tus propios recursos y encontrar tu forma de avanzar.
+    </p>
+
+    <div class="separador"></div>
+  </header>
+
+  <nav class="menu-interno" aria-label="Contenido de Facilitación Emocional">
+    <a href="#que-es">Qué es</a>
+    <a href="#acompanarte">En qué puedo acompañarte</a>
+    <a href="#como-trabajaremos">Cómo trabajaremos</a>
+    <a href="#sesiones">Sesiones</a>
+    <a href="#marco">Marco y límites</a>
+    <a href="#preguntas">Preguntas frecuentes</a>
+  </nav>
+
+  <main class="contenido">
+
+    <section id="que-es">
+      <h2>Qué es la Facilitación Emocional</h2>
+
+      <p>
+        La Facilitación Emocional es un proceso de acompañamiento orientado al
+        autoconocimiento, el aprendizaje y el desarrollo de competencias emocionales.
+      </p>
+
+      <p>
+        Puede haber momentos en los que sabemos que algo no termina de encajar,
+        pero nos cuesta ponerle nombre. Otros en los que sabemos qué ocurre,
+        pero no encontramos la manera de afrontarlo de forma diferente.
+      </p>
+
+      <p>
+        Durante el acompañamiento trabajaremos para comprender mejor lo que estás
+        viviendo, reconocer emociones, necesidades, recursos y dificultades,
+        ampliar perspectivas y explorar nuevas posibilidades de respuesta.
+      </p>
+
+      <p>
+        Mi papel no es decirte qué deberías hacer ni darte una solución preparada,
+        sino acompañarte para que puedas comprender mejor tu experiencia,
+        desarrollar tus propios recursos y tomar tus propias decisiones.
+      </p>
+
+      <div class="destacado">
+        Tú sigues siendo la persona protagonista del proceso.
+      </div>
+
+      <h3>Tres movimientos para orientarnos</h3>
+
+      <p>
+        Estos tres movimientos funcionan como una orientación, no como una secuencia
+        rígida. Dependiendo de la persona y del momento podremos avanzar, detenernos
+        o volver sobre alguno de ellos.
+      </p>
+
+      <div class="movimientos">
+        <div class="movimiento">
+          <h3>Conciencia</h3>
+          <p>
+            Comprender mejor qué está ocurriendo, reconociendo emociones,
+            pensamientos, necesidades, recursos, dificultades y límites.
+          </p>
+        </div>
+
+        <div class="movimiento">
+          <h3>Regulación y aprendizaje</h3>
+          <p>
+            Desarrollar recursos, habilidades y nuevas formas de relacionarte
+            con aquello que estás viviendo.
+          </p>
+        </div>
+
+        <div class="movimiento">
+          <h3>Acción</h3>
+          <p>
+            Cuando tenga sentido, trasladar lo aprendido a tu vida cotidiana
+            mediante decisiones, pequeños pasos o nuevas formas de responder.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Lo que ocurra al llevarlo a la práctica también nos proporcionará nueva
+        información para seguir comprendiendo y aprendiendo.
+      </p>
+
+      <p class="nota">
+        La Facilitación Emocional es un servicio de acompañamiento y desarrollo
+        personal de carácter no sanitario.
+      </p>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+    <section id="acompanarte">
+      <h2>En qué puedo acompañarte</h2>
+
+      <p>
+        No necesitas llegar con un problema perfectamente definido ni con un objetivo
+        claro. A veces sabemos qué queremos cambiar; otras, el primer paso consiste
+        precisamente en comprender mejor qué nos está ocurriendo.
+      </p>
+
+      <p>
+        La Facilitación Emocional puede acompañarte en situaciones de la vida cotidiana
+        relacionadas con el conocimiento de ti mismo, la gestión emocional, las relaciones,
+        la toma de decisiones o los procesos de cambio y desarrollo personal.
+      </p>
+
+      <div class="areas">
+        <div class="area">
+          <h3>Comprenderte mejor</h3>
+          <p>
+            Identificar y comprender mejor lo que estás sintiendo, reconocer necesidades
+            y patrones habituales, y profundizar en tu autoconocimiento, autoestima y autoconcepto.
+          </p>
+        </div>
+
+        <div class="area">
+          <h3>Relacionarte de otra manera con tus emociones</h3>
+          <p>
+            Reconocer y comprender tus emociones y desarrollar recursos para regularlas
+            y responder de forma más consciente ante situaciones de estrés cotidiano,
+            sobrecarga o dificultad emocional.
+          </p>
+        </div>
+
+        <div class="area">
+          <h3>Relaciones, comunicación y límites</h3>
+          <p>
+            Desarrollar recursos relacionados con la comunicación, la asertividad,
+            la expresión de necesidades, el establecimiento de límites, la empatía
+            o la gestión de conflictos interpersonales.
+          </p>
+        </div>
+
+        <div class="area">
+          <h3>Decisiones, cambios y momentos de transición</h3>
+          <p>
+            Ordenar lo que estás viviendo, explorar alternativas y encontrar tus propios
+            pasos ante decisiones, cambios de etapa, nuevos objetivos, hábitos o momentos
+            de bloqueo y estancamiento.
+          </p>
+        </div>
+
+        <div class="area">
+          <h3>Desarrollar recursos propios</h3>
+          <p>
+            También podemos trabajar para desarrollar competencias emocionales,
+            entrenar habilidades y ampliar recursos que puedas utilizar de manera
+            autónoma en tu vida cotidiana.
+          </p>
+        </div>
+      </div>
+
+      <div class="destacado">
+        No necesitas saber exactamente qué te ocurre ni tener claro por dónde empezar.
+        Parte del acompañamiento puede consistir precisamente en descubrirlo juntos.
+      </div>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+    <section id="como-trabajaremos">
+      <h2>Cómo trabajaremos</h2>
+
+      <p>
+        Cada proceso parte de una persona, una situación y unas necesidades diferentes.
+        Por eso existe una estructura que nos orienta, pero no un guion cerrado.
+      </p>
+
+      <h3>Partimos de lo que necesitas</h3>
+      <p>
+        Las primeras conversaciones nos permitirán comprender qué te ha llevado a solicitar
+        acompañamiento y qué te gustaría trabajar. No necesitas llegar con todo claro:
+        podemos comenzar precisamente por ordenar lo que está ocurriendo.
+      </p>
+
+      <p>
+        Trabajaremos con la información que resulte relevante, sin necesidad de conocer
+        toda tu historia ni buscar necesariamente una causa oculta.
+      </p>
+
+      <h3>Construimos una forma de trabajar juntos</h3>
+      <p>
+        Hablaremos de tus expectativas, de lo que necesitas para sentirte cómodo,
+        de lo que puedes esperar de mí y de tu propia participación en el proceso.
+      </p>
+
+      <p>
+        Esta alianza no es un acuerdo rígido, sino un marco vivo de colaboración
+        que podremos revisar a medida que avance el acompañamiento.
+      </p>
+
+      <h3>Utilizamos las herramientas que tengan sentido</h3>
+      <p>
+        La conversación, la escucha y las preguntas serán recursos fundamentales.
+        Cuando resulte útil, podremos incorporar escritura, recursos expresivos,
+        atención emocional y corporal, respiración, mindfulness, visualización,
+        ejercicios de comunicación, roleplay u otras prácticas.
+      </p>
+
+      <p>
+        Cada propuesta tendrá una finalidad concreta, se adaptará a ti y podrás
+        decidir si quieres realizarla.
+      </p>
+
+      <div class="destacado">
+        La herramienta está al servicio del proceso, no el proceso al servicio de la herramienta.
+      </div>
+
+      <h3>Llevamos el aprendizaje a tu vida cotidiana</h3>
+      <p>
+        Cuando tenga sentido, podremos trasladar lo trabajado a situaciones reales
+        mediante pequeñas prácticas, decisiones o nuevas formas de responder.
+      </p>
+
+      <p>
+        No son deberes ni exámenes. Lo que ocurra al poner algo en práctica,
+        también cuando no salga como esperábamos, nos proporciona información
+        para seguir comprendiendo, aprendiendo y ajustando el proceso.
+      </p>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+    <section id="sesiones">
+      <h2>Sesiones y proceso</h2>
+
+      <h3>La primera sesión</h3>
+      <p>
+        Sirve para conocernos, comprender qué te ha llevado a solicitar acompañamiento,
+        explorar qué necesitas y valorar si este tipo de trabajo encaja contigo.
+        También aclararemos el funcionamiento y los límites del servicio.
+      </p>
+
+      <p>
+        No es necesario que llegues con un objetivo perfectamente definido.
+        Podemos comenzar precisamente por darle forma juntos.
+      </p>
+
+      <h3>Las siguientes sesiones</h3>
+      <p>
+        Retomaremos lo trabajado anteriormente y revisaremos qué ha ocurrido desde
+        la última sesión. Los aprendizajes, dificultades o cambios que aparezcan
+        nos permitirán mantener o ajustar la dirección del proceso.
+      </p>
+
+      <p>
+        Cuando acordemos alguna práctica entre sesiones, su finalidad será trasladar
+        lo aprendido a tu vida cotidiana, no comprobar si has «hecho los deberes».
+      </p>
+
+      <h3>Duración y frecuencia</h3>
+      <p>
+        No existe un número predeterminado de sesiones. Una necesidad concreta puede
+        quedar suficientemente atendida en una única sesión, mientras que otros objetivos
+        pueden requerir varias.
+      </p>
+
+      <p>
+        La frecuencia se acordará según tus necesidades y podrá modificarse durante
+        el proceso. También revisaremos periódicamente si continuar sigue teniendo
+        sentido y aportando valor.
+      </p>
+
+      <h3>El cierre también forma parte del proceso</h3>
+      <p>
+        El acompañamiento puede finalizar cuando el objetivo se haya alcanzado
+        suficientemente, cuando consideres atendida la necesidad que te llevó a comenzar
+        o cuando dispongas de recursos para continuar por ti mismo.
+      </p>
+
+      <p>
+        No es necesario que todas las dificultades hayan desaparecido ni que todo
+        esté «resuelto».
+      </p>
+
+      <div class="destacado">
+        El objetivo es que progresivamente necesites menos acompañamiento, no más.
+      </div>
+
+      <p>
+        Cerrar un proceso no significa cerrar la puerta. Si más adelante aparece
+        una nueva necesidad, podremos valorar si tiene sentido iniciar un nuevo acompañamiento.
+      </p>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+    <section id="marco">
+      <h2>Marco profesional y límites</h2>
+
+      <h3>Qué es y qué no es este servicio</h3>
+      <p>
+        La Facilitación Emocional es un servicio de acompañamiento y desarrollo personal
+        de carácter no sanitario, orientado al autoconocimiento, el aprendizaje y el
+        desarrollo de competencias emocionales.
+      </p>
+
+      <p>
+        No constituye psicoterapia ni atención sanitaria. No realizo evaluaciones clínicas,
+        diagnósticos ni tratamiento de trastornos psicológicos o psiquiátricos, ni sustituye
+        la atención de profesionales sanitarios cuando esta resulta necesaria.
+      </p>
+
+      <h3>Si ya recibes atención psicológica o psiquiátrica</h3>
+      <p>
+        Esto no excluye automáticamente la posibilidad de realizar un proceso de
+        Facilitación Emocional, siempre que exista un objetivo adecuado para este servicio
+        y claramente diferenciado de la atención sanitaria que estés recibiendo.
+      </p>
+
+      <p>
+        La Facilitación no cuestionará, modificará ni sustituirá tu tratamiento
+        ni las indicaciones de los profesionales que te atienden.
+      </p>
+
+      <h3>Cuando necesitas otro tipo de ayuda</h3>
+      <p>
+        Si aquello que necesitas queda fuera de mis competencias o requiere evaluación
+        o atención especializada, te lo comunicaré con claridad y podremos valorar
+        qué tipo de profesional o recurso resulta más adecuado.
+      </p>
+
+      <div class="destacado">
+        Orientar hacia otro profesional cuando es necesario también forma parte
+        de un acompañamiento responsable.
+      </div>
+
+      <h3>Confidencialidad y cuidado de la información</h3>
+      <p>
+        Lo que compartas durante el acompañamiento será tratado de forma confidencial
+        y con respeto a tu privacidad.
+      </p>
+
+      <p>
+        La información recogida se limitará a aquella que resulte necesaria para prestar
+        el servicio y darle continuidad. Antes de comenzar se facilitará la información
+        correspondiente sobre confidencialidad, sus límites y el tratamiento y protección
+        de tus datos personales.
+      </p>
+
+      <h3>Tu autonomía</h3>
+      <p>
+        Tú decides qué quieres compartir y qué aspectos deseas trabajar. Puedes expresar
+        que no quieres abordar un tema, rechazar una práctica o dinámica, plantear dudas
+        sobre el proceso y decidir finalizar el acompañamiento.
+      </p>
+
+      <p>
+        Mi responsabilidad es ofrecerte un marco claro, trabajar dentro de mis competencias
+        y señalar los límites del servicio cuando sea necesario.
+      </p>
+
+      <div class="destacado">
+        Acompañar no significa decidir por ti.
+      </div>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+    <section id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+
+      <div class="faq">
+        <h3>¿Necesito saber exactamente qué quiero trabajar?</h3>
+        <p>
+          No. Puedes llegar con un objetivo concreto o simplemente con la sensación
+          de que hay algo que necesitas comprender, ordenar o afrontar de otra manera.
+          Parte del primer trabajo puede consistir precisamente en darle forma juntos.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Tengo que contar toda mi historia?</h3>
+        <p>
+          No. Trabajaremos con la información que resulte relevante para comprender
+          aquello que quieres abordar. Tú decides qué compartes y cuándo no quieres
+          profundizar en algún tema.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Tengo que hacer ejercicios entre sesiones?</h3>
+        <p>
+          No necesariamente. En algunos momentos puede resultar útil realizar una práctica,
+          observar determinadas situaciones o probar alguna pequeña acción. No se trata
+          de «hacer deberes», sino de generar experiencias de las que podamos aprender.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Qué diferencia hay entre Facilitación Emocional y psicoterapia?</h3>
+        <p>
+          La Facilitación Emocional trabaja desde el autoconocimiento, el aprendizaje
+          y el desarrollo de competencias emocionales y personales. No realiza evaluación
+          clínica, diagnóstico ni tratamiento de trastornos psicológicos o psiquiátricos.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Puedo acudir si ya voy al psicólogo o al psiquiatra?</h3>
+        <p>
+          Sí, siempre que exista un objetivo adecuado para la Facilitación Emocional
+          y claramente diferenciado del tratamiento que estés recibiendo. El acompañamiento
+          no sustituye, modifica ni interfiere con las indicaciones de los profesionales
+          sanitarios que te atienden.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Qué ocurre si durante una sesión me emociono mucho?</h3>
+        <p>
+          Las emociones intensas pueden aparecer durante una sesión. Podemos detenernos,
+          dar espacio a lo que estás sintiendo y valorar qué necesitas en ese momento.
+          Si aquello que aparece requiere una atención fuera de mis competencias,
+          priorizaremos el acceso al recurso adecuado.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>¿Utilizas Reiki durante las sesiones de Facilitación Emocional?</h3>
+        <p>
+          La Facilitación Emocional y el Reiki son servicios diferentes, aunque pueden
+          ser complementarios. Que trabaje también como Maestro de Reiki no significa
+          que vaya a utilizarlo automáticamente durante una sesión de Facilitación Emocional.
+          Cada servicio mantiene su propio encuadre, finalidad y forma de trabajo.
+        </p>
+
+        <p>
+          Si en algún momento pudiera resultar adecuado incorporar Reiki como recurso
+          complementario, se hablaría previamente contigo y se utilizaría únicamente
+          con tu consentimiento.
+        </p>
+
+        <p>
+          En ningún caso su utilización modifica los límites profesionales de la
+          Facilitación Emocional ni sustituye una atención sanitaria o psicológica
+          cuando esta sea necesaria.
+        </p>
+      </div>
+
+      <a class="volver" href="#arriba">↑ Volver arriba</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
