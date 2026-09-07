@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Reiki | Jose Montesinos</title>
+  <meta
+    name="description"
+    content="Reiki con Jose Montesinos: sesiones individuales, forma de trabajo, aprendizaje de Reiki, marco profesional y preguntas frecuentes."
+  />
+
+  <style>
+    :root {
+      --bg: #efe6e4;
+      --tinta: #1f2328;
+      --apagado: #6f664c;
+      --linea: #cfc8bf;
+      --suave: rgba(255, 255, 255, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--tinta);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .pagina {
+      min-height: 100vh;
+    }
+
+    /* NAVEGACIÓN GENERAL */
+
+    .navegacion {
+      width: 100%;
+      padding: 26px 38px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 22px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+
+    .menu a,
+    .menu span {
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    .menu a:hover,
+    .menu .activo {
+      color: var(--tinta);
+    }
+
+    .menu .proximamente {
+      opacity: 0.72;
+      cursor: default;
+    }
+
+    /* CABECERA */
+
+    .hero {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 105px 28px 78px;
+      text-align: center;
+    }
+
+    .ceja {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      color: var(--apagado);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      line-height: 1.05;
+      font-weight: 400;
+    }
+
+    .hero-texto {
+      max-width: 690px;
+      margin: 28px auto 0;
+      font-size: 1.03rem;
+    }
+
+    .acciones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border: 1px solid var(--tinta);
+      border-radius: 999px;
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
+      text-decoration: none;
+      background: transparent;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* MENÚ INTERNO */
+
+    .nav-interna-wrap {
+      border-top: 1px solid var(--linea);
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .nav-interna {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 17px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px 24px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+    }
+
+    .nav-interna a {
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    .nav-interna a:hover {
+      color: var(--tinta);
+    }
+
+    /* CONTENIDO */
+
+    .contenido {
+      max-width: 790px;
+      margin: 0 auto;
+      padding: 20px 28px 100px;
+    }
+
+    .seccion {
+      padding: 78px 0 20px;
+      scroll-margin-top: 20px;
+    }
+
+    .seccion + .seccion {
+      border-top: 1px solid var(--linea);
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 38px 0 12px;
+      font-size: 1.3rem;
+      line-height: 1.3;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .destacado {
+      margin: 32px 0;
+      padding: 22px 26px;
+      border-left: 2px solid var(--apagado);
+      background: var(--suave);
+      font-size: 1.08rem;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 22px;
+      font-family: Arial, sans-serif;
+      font-size: 0.76rem;
+      color: var(--apagado);
+      text-decoration: none;
+    }
+
+    /* NIVELES */
+
+    .niveles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 34px 0;
+    }
+
+    .nivel {
+      padding: 25px;
+      border: 1px solid var(--linea);
+      border-radius: 16px;
+      background: var(--suave);
+    }
+
+    .nivel h3 {
+      margin-top: 0;
+    }
+
+    .nivel p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FAQ */
+
+    .faq {
+      border-top: 1px solid var(--linea);
+    }
+
+    details {
+      border-bottom: 1px solid var(--linea);
+      padding: 18px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.08rem;
+      font-weight: 600;
+    }
+
+    details p:first-of-type {
+      margin-top: 15px;
+    }
+
+    details p:last-child {
+      margin-bottom: 4px;
+    }
+
+    /* CIERRE */
+
+    .cierre {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .cierre p {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 700px) {
+      .navegacion {
+        padding: 22px 20px 0;
+      }
+
+      .menu {
+        gap: 8px 14px;
+        font-size: 0.72rem;
+      }
+
+      .hero {
+        padding-top: 75px;
+      }
+
+      .niveles {
+        grid-template-columns: 1fr;
+      }
+
+      .contenido {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .seccion {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body id="arriba">
+  <div class="pagina">
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <div class="menu">
+        <a href="/">Inicio</a>
+        <span class="proximamente">Facilitación emocional</span>
+        <a class="activo" href="/reiki/">Reiki</a>
+        <span class="proximamente">Experiencias</span>
+        <a href="/libro/">Libros</a>
+        <span class="proximamente">Sobre mí</span>
+        <a href="mailto:hola@soyjosemontesinos.es">Contacto</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="ceja">Reiki</div>
+
+      <h1>Presencia, calma<br>y energía</h1>
+
+      <div class="hero-texto">
+        <p>
+          Reiki puede ofrecerte un espacio para detenerte, recibir la práctica
+          y dedicar un tiempo a tu bienestar, autocuidado y desarrollo personal.
+        </p>
+
+        <p>
+          Puedes conocer Reiki a través de una sesión, incorporar la práctica
+          a tu vida o aprenderla y desarrollar tu propio camino con ella.
+        </p>
+
+        <p>
+          No necesitas conocer previamente la técnica ni adoptar una determinada
+          creencia. Puedes descubrirla y valorar desde tu propia experiencia qué
+          lugar quieres darle.
+        </p>
+      </div>
+
+      <div class="acciones">
+        <a class="btn" href="#recibir">Recibir Reiki</a>
+        <a class="btn" href="#aprender">Aprender Reiki</a>
+      </div>
+    </header>
+
+    <div class="nav-interna-wrap">
+      <nav class="nav-interna" aria-label="Contenido de Reiki">
+        <a href="#que-es">Qué es</a>
+        <a href="#recibir">Recibir Reiki</a>
+        <a href="#mi-forma">Mi forma de trabajar</a>
+        <a href="#aprender">Aprender Reiki</a>
+        <a href="#limites">Marco y límites</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+      </nav>
+    </div>
+
+    <main class="contenido">
+
+      <section class="seccion" id="que-es">
+        <h2>Qué es Reiki</h2>
+
+        <p>
+          Reiki es una práctica japonesa de trabajo energético mediante las manos,
+          desarrollada por Mikao Usui a comienzos del siglo XX.
+        </p>
+
+        <p>
+          Su práctica parte de la idea de que podemos canalizar energía y utilizarla
+          tanto en nosotros mismos como al acompañar a otras personas. Habitualmente
+          se realiza colocando las manos suavemente sobre distintas zonas del cuerpo
+          o manteniéndolas a poca distancia, dentro de un espacio tranquilo que
+          favorezca la atención y el descanso.
+        </p>
+
+        <p>
+          Pero Reiki no se limita a recibir una sesión. Su práctica también incluye
+          el autotratamiento, la meditación, determinados ejercicios tradicionales
+          y los cinco principios o <em>Gokai</em>, que proponen llevar la atención
+          a nuestra manera de relacionarnos con las preocupaciones, el enfado,
+          la gratitud, el trabajo y los demás.
+        </p>
+
+        <p>
+          Por eso puede entenderse también como una práctica de autocuidado y
+          desarrollo personal. Algunas personas se acercan a Reiki desde una dimensión
+          espiritual; otras lo hacen buscando un espacio de calma, presencia o
+          conexión consigo mismas.
+        </p>
+
+        <p>
+          No es necesario adoptar un sistema concreto de creencias para acercarse a
+          Reiki. Puedes conocer la práctica, experimentarla y valorar desde tu propia
+          experiencia qué lugar quieres darle.
+        </p>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion" id="recibir">
+        <h2>Recibir Reiki</h2>
+
+        <p>
+          Una sesión de Reiki es un espacio individual de práctica en el que puedes
+          detenerte durante un tiempo y recibir Reiki sin necesidad de conocer
+          previamente la técnica ni realizar ninguna preparación especial.
+        </p>
+
+        <h3>Antes de comenzar</h3>
+
+        <p>
+          Al inicio dedicaremos unos minutos a hablar sobre cómo llegas a la sesión,
+          si existe algo que quieras comentar y resolver cualquier duda que tengas.
+        </p>
+
+        <p>
+          También te explicaré brevemente cómo vamos a trabajar para que conozcas de
+          antemano qué ocurrirá durante la práctica y puedas plantear cualquier
+          preferencia o necesidad.
+        </p>
+
+        <p>
+          No es necesario acudir con un objetivo concreto. Puedes recibir Reiki
+          simplemente como una práctica de bienestar, autocuidado o conexión contigo
+          mismo.
+        </p>
+
+        <h3>Durante la sesión</h3>
+
+        <p>
+          La práctica se realiza habitualmente tumbado y vestido, en una posición
+          cómoda que permita permanecer relajado durante la sesión.
+        </p>
+
+        <p>
+          Iré colocando las manos sobre diferentes zonas del cuerpo o manteniéndolas
+          a poca distancia, permaneciendo durante unos minutos en cada posición.
+          El recorrido puede adaptarse al desarrollo de la sesión y a tus necesidades
+          y preferencias.
+        </p>
+
+        <p>
+          No necesitas hacer nada especial mientras recibes Reiki. Puedes cerrar los
+          ojos, descansar y permitirte vivir la experiencia sin intentar provocar
+          ninguna sensación determinada.
+        </p>
+
+        <p>
+          Cada persona puede experimentar la sesión de una manera diferente. Algunas
+          perciben calor, hormigueo, cambios en la respiración o una relajación profunda;
+          otras experimentan sensaciones mucho más sutiles o simplemente permanecen
+          tranquilas durante la práctica.
+        </p>
+
+        <div class="destacado">
+          No es necesario sentir algo concreto para recibir Reiki.
+        </div>
+
+        <h3>Contacto y comodidad</h3>
+
+        <p>
+          Algunas posiciones pueden realizarse mediante un contacto suave de las manos
+          sobre el cuerpo y otras pueden mantenerse a cierta distancia.
+        </p>
+
+        <p>
+          Antes de comenzar podremos hablar sobre ello y adaptar la práctica para que
+          te sientas cómodo. Si prefieres evitar el contacto físico en alguna zona o
+          durante toda la sesión, puedes indicarlo.
+        </p>
+
+        <p>
+          Del mismo modo, durante la práctica puedes comunicar cualquier incomodidad,
+          pedir que cambiemos una posición o detener la sesión cuando lo necesites.
+        </p>
+
+        <h3>Al terminar</h3>
+
+        <p>
+          La sesión finalizará de forma gradual, dejando unos minutos para recuperar
+          tranquilamente el ritmo habitual antes de incorporarte.
+        </p>
+
+        <p>
+          Después podremos comentar brevemente cómo has vivido la experiencia o
+          cualquier sensación que quieras compartir.
+        </p>
+
+        <p>
+          No es necesario encontrar una explicación para todo lo que hayas sentido ni
+          interpretar cada sensación que aparezca. La experiencia pertenece a quien
+          la recibe y puede simplemente observarse y dejarse reposar.
+        </p>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion" id="mi-forma">
+        <h2>Mi forma de trabajar</h2>
+
+        <p>
+          Mi forma de trabajar con Reiki parte de una idea sencilla: cada persona
+          llega a la sesión de una manera diferente y cada experiencia puede ser
+          distinta.
+        </p>
+
+        <p>
+          Por eso mantengo una estructura que permite desarrollar la práctica con
+          claridad y cuidado, pero sin convertirla en un procedimiento rígido que
+          tenga que repetirse siempre de la misma forma.
+        </p>
+
+        <h3>Presencia antes que automatismo</h3>
+
+        <p>
+          Las posiciones de las manos y las técnicas de Reiki nos proporcionan una
+          base para trabajar, pero la práctica no consiste únicamente en seguir una
+          secuencia de posiciones.
+        </p>
+
+        <p>
+          Durante la sesión presto atención a su desarrollo, al ritmo de la persona
+          y a aquello que pueda resultar necesario adaptar, manteniendo siempre el
+          respeto por sus preferencias y límites.
+        </p>
+
+        <div class="destacado">
+          La técnica nos orienta; no sustituye la presencia.
+        </div>
+
+        <h3>Un espacio donde no necesitas demostrar nada</h3>
+
+        <p>
+          No espero que sientas determinadas sensaciones ni que vivas la sesión de
+          una manera concreta.
+        </p>
+
+        <p>
+          Puedes experimentar relajación, sensaciones físicas, emociones, pensamientos,
+          imágenes o simplemente un tiempo de quietud. También puede ocurrir que apenas
+          percibas cambios durante la práctica.
+        </p>
+
+        <p>
+          No utilizo esas experiencias para realizar diagnósticos ni para establecer
+          automáticamente qué significan. Si quieres compartirlas, podemos hablar sobre
+          ellas desde tu propia experiencia.
+        </p>
+
+        <h3>Reiki y escucha</h3>
+
+        <p>
+          Mi formación en Inteligencia Emocional también influye en mi manera de estar
+          presente y escuchar a la persona que tengo delante.
+        </p>
+
+        <p>
+          Esto no significa convertir una sesión de Reiki en una sesión de Facilitación
+          Emocional. Son servicios diferentes, aunque puedan ser complementarios, y cada
+          uno mantiene su propio encuadre y finalidad.
+        </p>
+
+        <p>
+          En una sesión de Reiki, la conversación puede ayudarnos a conocer cómo llegas,
+          atender tus necesidades durante la práctica y recoger después cómo has vivido
+          la experiencia, sin necesidad de analizar o trabajar emocionalmente todo
+          aquello que pueda aparecer.
+        </p>
+
+        <h3>Una devolución después de la sesión</h3>
+
+        <p>
+          Mi trabajo no termina necesariamente cuando finaliza la práctica.
+        </p>
+
+        <p>
+          Habitualmente, después de la sesión preparo una devolución escrita personalizada
+          que te haré llegar más adelante. En ella puedo recoger aspectos relevantes de
+          las conversaciones que hayamos mantenido, mis impresiones y observaciones
+          durante la práctica y algunos elementos que puedan ayudarte a integrar o seguir
+          explorando tu experiencia.
+        </p>
+
+        <p>
+          Esta devolución no es una evaluación ni un diagnóstico. Las percepciones que
+          pueda compartir forman parte de mi experiencia durante la sesión y no pretenden
+          establecer una interpretación definitiva sobre lo que te ocurre.
+        </p>
+
+        <p>
+          Puedes utilizarlas como información para observarte, reflexionar y extraer tus
+          propias conclusiones.
+        </p>
+
+        <div class="destacado">
+          La devolución busca ampliar tu propia observación, no decirte quién eres ni
+          qué te ocurre.
+        </div>
+
+        <h3>Una práctica adaptada a la persona</h3>
+
+        <p>
+          Podemos adaptar aspectos como el contacto físico, determinadas posiciones,
+          el ritmo de la sesión o la forma de desarrollar la práctica para favorecer
+          que puedas recibir Reiki de una manera cómoda y respetuosa.
+        </p>
+
+        <p>
+          Puedes expresar tus preferencias, hacer preguntas o pedir que modifiquemos
+          o detengamos cualquier parte de la práctica.
+        </p>
+
+        <div class="destacado">
+          La persona que recibe Reiki no deja de tener capacidad de decisión durante
+          la sesión.
+        </div>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion" id="aprender">
+        <h2>Aprender Reiki</h2>
+
+        <p>
+          Reiki no es una práctica reservada a personas con capacidades especiales.
+          Dentro de su tradición se considera que cualquier persona puede aprenderlo
+          mediante la formación, las iniciaciones y, sobre todo, la práctica y la
+          experiencia personal.
+        </p>
+
+        <p>
+          Aprender Reiki no consiste únicamente en conocer posiciones de las manos o
+          incorporar nuevas técnicas. El aprendizaje comienza principalmente con uno
+          mismo: practicando, observando la propia experiencia e integrando
+          progresivamente Reiki en la vida cotidiana.
+        </p>
+
+        <h3>Un aprendizaje por etapas</h3>
+
+        <p>
+          Tradicionalmente, la formación en Reiki se organiza en diferentes niveles
+          que permiten profundizar progresivamente en la práctica.
+        </p>
+
+        <p>
+          Cada nivel incorpora nuevos conocimientos y herramientas, pero avanzar no es
+          una obligación ni una carrera. Una persona puede encontrar en el Primer Nivel
+          todo lo que necesita para mantener una práctica personal, mientras que otra
+          puede decidir continuar cuando sienta que quiere profundizar.
+        </p>
+
+        <p>
+          Lo importante no es acumular niveles, sino disponer del tiempo y la práctica
+          necesarios para integrar lo aprendido.
+        </p>
+
+        <div class="niveles">
+
+          <article class="nivel">
+            <h3>Primer Nivel</h3>
+            <p><strong>El encuentro con uno mismo</strong></p>
+            <p>
+              La formación se centra especialmente en comprender las bases de la
+              práctica, comenzar a trabajar con la energía a través de las manos y
+              aprender el autotratamiento.
+            </p>
+            <p>
+              También permite conocer su historia, los <em>Gokai</em> o principios,
+              determinadas prácticas de meditación y atención y las bases para ofrecer
+              Reiki de forma sencilla a otras personas.
+            </p>
+            <p>
+              El objetivo principal es comenzar a desarrollar una práctica personal
+              estable y una relación propia con Reiki.
+            </p>
+          </article>
+
+          <article class="nivel">
+            <h3>Segundo Nivel</h3>
+            <p><strong>Ampliando la práctica</strong></p>
+            <p>
+              Profundiza en lo aprendido anteriormente e incorpora nuevas herramientas,
+              entre ellas los símbolos tradicionales de Reiki.
+            </p>
+            <p>
+              La práctica amplía sus posibilidades y comienza a trabajar de una manera
+              más específica con aspectos mentales y emocionales. Tradicionalmente,
+              también se introduce el Reiki a distancia.
+            </p>
+            <p>
+              Más allá de incorporar nuevas técnicas, invita a ampliar la experiencia
+              y la comprensión de la práctica.
+            </p>
+          </article>
+
+          <article class="nivel">
+            <h3>Tercer Nivel</h3>
+            <p><strong>Integración y madurez</strong></p>
+            <p>
+              Supone una etapa de mayor profundización e integración personal.
+            </p>
+            <p>
+              Se incorporan nuevos símbolos y herramientas meditativas y se desarrolla
+              una relación más estable y consciente con Reiki, dando mayor importancia
+              al autoconocimiento, la práctica personal y su integración en la vida
+              cotidiana.
+            </p>
+            <p>
+              Para algunas personas también puede representar el paso hacia una práctica
+              más estructurada con otras personas, aunque no obliga a dedicarse
+              profesionalmente a Reiki.
+            </p>
+          </article>
+
+          <article class="nivel">
+            <h3>Maestría</h3>
+            <p><strong>Transmitir el camino</strong></p>
+            <p>
+              Está orientada a quienes desean aprender a transmitir y enseñar Reiki a
+              otras personas.
+            </p>
+            <p>
+              Incluye la formación necesaria para realizar iniciaciones y acompañar el
+              aprendizaje de futuros alumnos, pero no consiste únicamente en aprender
+              nuevos procedimientos.
+            </p>
+            <p>
+              También implica asumir la responsabilidad de enseñar, compartir la propia
+              experiencia y mantener una práctica coherente y un aprendizaje continuo.
+            </p>
+          </article>
+
+        </div>
+
+        <h3>Cada etapa tiene su propio ritmo</h3>
+
+        <p>
+          No existe ninguna necesidad de recorrer todos los niveles.
+        </p>
+
+        <p>
+          Entre una formación y la siguiente es importante dejar espacio para practicar,
+          experimentar e integrar lo aprendido. El momento adecuado para continuar no
+          depende únicamente del tiempo transcurrido, sino también de la relación que
+          cada persona haya desarrollado con su propia práctica.
+        </p>
+
+        <div class="destacado">
+          Aprender Reiki no consiste en llegar cuanto antes al siguiente nivel, sino
+          en integrar realmente aquel en el que te encuentras.
+        </div>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion" id="limites">
+        <h2>Marco y límites</h2>
+
+        <p>
+          Reiki es una práctica de bienestar, autocuidado y desarrollo personal. Puede
+          formar parte de la manera en que una persona cuida de sí misma o complementar
+          otros recursos que ya utiliza, pero no es una práctica sanitaria.
+        </p>
+
+        <p>
+          Tener claro este marco permite acercarse a Reiki con expectativas más
+          ajustadas y utilizarlo en el lugar que le corresponde.
+        </p>
+
+        <h3>Reiki no sustituye la atención sanitaria</h3>
+
+        <p>
+          Una sesión de Reiki no realiza diagnósticos médicos o psicológicos y no
+          sustituye la valoración, el tratamiento o el seguimiento de profesionales
+          sanitarios.
+        </p>
+
+        <p>
+          Si estás recibiendo atención médica, psicológica o psiquiátrica, Reiki puede
+          mantenerse como una práctica complementaria siempre que no interfiera con
+          esa atención.
+        </p>
+
+        <p>
+          No recomendaré suspender o modificar tratamientos, medicación o indicaciones
+          realizadas por profesionales sanitarios.
+        </p>
+
+        <h3>No necesitas acudir con un problema</h3>
+
+        <p>
+          Recibir Reiki tampoco requiere que exista una enfermedad, un diagnóstico o
+          una dificultad concreta que solucionar.
+        </p>
+
+        <p>
+          Puedes acercarte a la práctica simplemente porque quieres dedicarte un espacio
+          de descanso y autocuidado, explorar Reiki, prestar atención a cómo te encuentras
+          o incorporar una práctica de bienestar a tu vida.
+        </p>
+
+        <p>
+          Esto también significa que no necesitamos convertir todo aquello que aparezca
+          durante una sesión en un problema que deba ser explicado o resuelto.
+        </p>
+
+        <h3>Las experiencias son personales</h3>
+
+        <p>
+          Durante una sesión pueden aparecer sensaciones físicas, emociones, pensamientos,
+          recuerdos, imágenes o estados de relajación. También puede ocurrir que la
+          experiencia sea mucho más sencilla y apenas percibas cambios.
+        </p>
+
+        <p>
+          Estas experiencias pueden ser significativas para quien las vive, pero no las
+          utilizo como herramienta diagnóstica ni considero que una sensación determinada
+          permita establecer por sí misma qué le ocurre a una persona.
+        </p>
+
+        <p>
+          Podemos hablar sobre aquello que hayas experimentado, siempre respetando tu
+          propia interpretación y evitando presentar mis percepciones como verdades
+          sobre ti.
+        </p>
+
+        <h3>Reiki y otras formas de acompañamiento</h3>
+
+        <p>
+          Mi trabajo con Reiki y mi trabajo en Facilitación Emocional forman parte de mi
+          actividad profesional, pero son servicios diferentes.
+        </p>
+
+        <p>
+          Una sesión de Reiki no se convierte automáticamente en una sesión de
+          Facilitación Emocional porque durante ella aparezca una emoción, una
+          preocupación o una conversación personal.
+        </p>
+
+        <p>
+          Del mismo modo, utilizar Reiki como recurso complementario dentro de otro
+          proceso requeriría hablarlo previamente y contar con tu acuerdo.
+        </p>
+
+        <div class="destacado">
+          Combinar herramientas no modifica los límites de cada una de ellas.
+        </div>
+
+        <h3>Cuando Reiki no es suficiente</h3>
+
+        <p>
+          Hay situaciones en las que una persona puede necesitar atención médica,
+          psicológica, psiquiátrica u otro tipo de ayuda especializada.
+        </p>
+
+        <p>
+          En esos casos, Reiki no debe utilizarse como sustituto de esa atención. Si
+          durante nuestro contacto considero que alguna necesidad queda fuera de mi
+          ámbito profesional, te lo comunicaré con claridad y, cuando sea posible, te
+          orientaré hacia el tipo de ayuda que pueda resultar más adecuado.
+        </p>
+
+        <div class="destacado">
+          Utilizar Reiki como práctica complementaria no sustituye la atención sanitaria
+          cuando esta es necesaria.
+        </div>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion" id="preguntas">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq">
+
+          <details>
+            <summary>¿Tengo que creer en Reiki para recibir una sesión?</summary>
+            <p>
+              No necesitas adoptar una creencia determinada ni compartir una
+              interpretación concreta sobre Reiki para acercarte a la práctica.
+            </p>
+            <p>
+              Puedes venir desde una perspectiva espiritual, porque Reiki ya forma
+              parte de tu vida, por curiosidad o simplemente porque quieres experimentar
+              una sesión y observar cómo la vives.
+            </p>
+            <p>No necesitas convencerte de nada antes de empezar.</p>
+          </details>
+
+          <details>
+            <summary>¿Tengo que quitarme la ropa?</summary>
+            <p>No. Las sesiones de Reiki se realizan vestido.</p>
+            <p>Lo importante es que puedas permanecer cómodo durante la práctica.</p>
+          </details>
+
+          <details>
+            <summary>¿Hay contacto físico?</summary>
+            <p>
+              Puede haber un contacto suave de las manos sobre determinadas zonas del
+              cuerpo, aunque Reiki también puede practicarse manteniendo las manos a
+              cierta distancia.
+            </p>
+            <p>
+              Antes de comenzar podemos hablar sobre tus preferencias. Si no deseas
+              contacto físico, o prefieres evitarlo en determinadas zonas, la sesión
+              puede adaptarse.
+            </p>
+            <p>
+              También puedes cambiar de opinión durante la práctica y pedir que
+              modifiquemos o detengamos cualquier posición.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Qué puedo sentir durante una sesión?</summary>
+            <p>No existe una experiencia que deba producirse necesariamente.</p>
+            <p>
+              Algunas personas perciben calor, hormigueo, cambios en la respiración,
+              relajación o diferentes sensaciones corporales. También pueden aparecer
+              pensamientos, emociones, recuerdos o imágenes. Otras personas apenas
+              perciben sensaciones concretas y simplemente descansan.
+            </p>
+            <p>
+              La experiencia puede variar incluso entre distintas sesiones de una misma
+              persona.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Y si no siento nada?</summary>
+            <p>No pasa nada.</p>
+            <p>
+              No sentir calor, hormigueo u otra sensación concreta no significa que estés
+              haciendo algo mal ni que necesites esforzarte para que ocurra algo.
+            </p>
+            <p>
+              Durante la sesión puedes simplemente descansar y observar tu experiencia
+              tal como se presente.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Tengo que hablar de lo que me ocurre?</summary>
+            <p>No necesariamente.</p>
+            <p>
+              Antes y después de la práctica podemos mantener una breve conversación,
+              pero tú decides qué quieres compartir.
+            </p>
+            <p>
+              No necesitas contar toda tu historia personal ni explicar cuestiones que
+              prefieras mantener en privado para poder recibir Reiki.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuántas sesiones necesito?</summary>
+            <p>
+              No existe un número de sesiones que pueda establecerse de antemano para
+              todas las personas.
+            </p>
+            <p>
+              Puedes acudir a una sesión puntual o decidir repetir la experiencia. La
+              frecuencia dependerá de lo que busques, de cómo quieras integrar Reiki
+              dentro de tu autocuidado y de tu propia decisión.
+            </p>
+            <p>
+              No planteo las sesiones como un proceso que deba mantenerse indefinidamente
+              ni como una cantidad cerrada que haya que completar.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo recibir Reiki si estoy siguiendo un tratamiento médico o psicológico?</summary>
+            <p>
+              En principio, estar recibiendo atención médica, psicológica o psiquiátrica
+              no impide acercarse a Reiki como práctica complementaria.
+            </p>
+            <p>
+              Reiki no sustituye esa atención ni utilizaré una sesión para cuestionar
+              diagnósticos, modificar tratamientos o recomendar cambios en medicación
+              o indicaciones realizadas por profesionales sanitarios.
+            </p>
+            <p>
+              Si tienes alguna circunstancia concreta que pueda afectar a la comodidad
+              o al desarrollo de la sesión, puedes comentármela previamente para valorar
+              cómo adaptar la práctica.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Reiki y Facilitación Emocional son lo mismo?</summary>
+            <p>No.</p>
+            <p>
+              Reiki es una práctica energética orientada al bienestar, el autocuidado
+              y el desarrollo personal. La Facilitación Emocional es un proceso de
+              acompañamiento orientado al aprendizaje y desarrollo de competencias
+              emocionales mediante conversación, reflexión y diferentes herramientas.
+            </p>
+            <p>
+              Mi formación en Inteligencia Emocional influye en mi forma de escuchar y
+              acompañar, pero eso no convierte automáticamente una sesión de Reiki en
+              Facilitación Emocional.
+            </p>
+            <p>
+              Si en algún momento pudiera resultar útil combinar ambos enfoques, lo
+              hablaríamos previamente y decidiríamos juntos cómo hacerlo.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Qué ocurre si durante la sesión aparece una emoción intensa?</summary>
+            <p>
+              Que aparezca una emoción durante una sesión no significa necesariamente
+              que exista un problema ni que tengamos que interpretarla inmediatamente.
+            </p>
+            <p>
+              Podemos detenernos, modificar la práctica o finalizarla si lo necesitas.
+              Después podremos hablar sobre lo ocurrido si quieres hacerlo.
+            </p>
+            <p>
+              Si aquello que aparece requiere un tipo de atención que queda fuera del
+              ámbito de Reiki o de mis competencias profesionales, te lo comunicaré y
+              podremos valorar la conveniencia de acudir a un profesional especializado.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo detener una sesión?</summary>
+            <p>Sí.</p>
+            <p>
+              Puedes pedir en cualquier momento que cambiemos una posición, evitemos el
+              contacto, hagamos una pausa o terminemos la práctica.
+            </p>
+            <p>
+              <strong>
+                Tu consentimiento no se da una vez al comenzar la sesión y desaparece
+                después: puedes modificarlo en cualquier momento.
+              </strong>
+            </p>
+          </details>
+
+        </div>
+
+        <a class="volver" href="#arriba">↑ Volver arriba</a>
+      </section>
+
+      <section class="seccion cierre" id="contacto">
+        <h2>Si quieres dar el siguiente paso</h2>
+
+        <p>
+          Puedes acercarte a Reiki de distintas maneras.
+        </p>
+
+        <p>
+          Si quieres experimentar Reiki por primera vez, ya conoces la práctica o
+          simplemente quieres volver a dedicarte un espacio para recibir una sesión,
+          podemos hablar sobre ello. Si lo que te interesa es aprender Reiki, puedo
+          orientarte sobre los diferentes niveles y ayudarte a valorar por dónde empezar.
+        </p>
+
+        <p>
+          Y si todavía no tienes claro qué opción encaja mejor contigo, también puedes
+          escribirme y contarme qué estás buscando.
+        </p>
+
+        <div class="acciones">
+          <a class="btn" href="mailto:hola@soyjosemontesinos.es?subject=Sesión%20de%20Reiki">Recibir Reiki</a>
+          <a class="btn" href="mailto:hola@soyjosemontesinos.es?subject=Aprender%20Reiki">Aprender Reiki</a>
+          <a class="btn" href="mailto:hola@soyjosemontesinos.es">Contactar</a>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+</body>
+</html>
