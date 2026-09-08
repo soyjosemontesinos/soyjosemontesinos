@@ -1,38 +1,316 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguimos en contacto · Jose Montesinos</title>
-  <meta name="description" content="Página para lectores de Aprender a acompañarnos, de Jose Montesinos." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Libros | Jose Montesinos</title>
+  <meta
+    name="description"
+    content="Aprender a acompañarnos, de Jose Montesinos. Un recorrido por el cuerpo, las emociones y nuestra propia existencia."
+  >
+
   <style>
-    :root{--bg:#efebe4;--ink:#1f2328;--muted:#6f6a64;--line:#cfc8bf;--soft:#f7f3ed}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.7}
-    main{min-height:100vh;display:grid;place-items:center;padding:38px 18px}.card{max-width:780px;width:100%;padding:clamp(28px,6vw,58px);border:1px solid var(--line);background:rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(0,0,0,.04)}
-    .eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.17em;font-size:.76rem;color:var(--muted);margin-bottom:16px}
-    h1{font-size:clamp(2.35rem,7vw,4.7rem);font-weight:500;line-height:1.06;margin:0 0 14px} h2{font-size:clamp(1.25rem,3vw,1.55rem);font-weight:500;margin:0;color:var(--muted)}
-    .rule{height:1px;background:var(--line);width:100%;margin:32px 0}.lead{font-size:clamp(1.08rem,2vw,1.22rem);margin:0 0 22px}.copy{margin:0 0 14px}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{font-family:Arial,sans-serif;text-decoration:none;border:1px solid var(--ink);padding:11px 16px;border-radius:999px;font-size:.94rem}.btn.secondary{border-color:var(--line)}
-    .small{font-family:Arial,sans-serif;font-size:.86rem;color:var(--muted);margin-top:28px}.signature{margin-top:28px;font-size:1.05rem}.signature strong{font-family:Arial,sans-serif;letter-spacing:.04em;font-size:.95rem}
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #efe6e4;
+      color: #1f2328;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(100% - 40px, 980px);
+      margin: 0 auto;
+    }
+
+    .navegacion {
+      padding: 22px 0;
+      border-bottom: 1px solid #cfc8bf;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .menu a:hover {
+      opacity: 0.65;
+    }
+
+    .menu .activo {
+      font-weight: 700;
+    }
+
+    .proximamente {
+      color: #9b958e;
+      cursor: default;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 0 90px;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .ceja {
+      margin: 0 0 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 auto 22px;
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .subtitulo {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      color: #494b4e;
+    }
+
+    main {
+      padding: 90px 0 110px;
+    }
+
+    section {
+      max-width: 760px;
+      margin: 0 auto 90px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    .acciones {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 38px;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 13px 20px;
+      border: 1px solid #6f664c;
+      border-radius: 999px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .boton:hover {
+      background: #6f664c;
+      color: #efe6e4;
+    }
+
+    .destacado {
+      margin-top: 42px;
+      padding: 28px 30px;
+      border-top: 1px solid #cfc8bf;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    footer {
+      padding: 34px 20px;
+      border-top: 1px solid #cfc8bf;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      color: #6b6b6b;
+    }
+
+    @media (max-width: 700px) {
+      .contenedor {
+        width: min(100% - 28px, 980px);
+      }
+
+      .navegacion {
+        padding: 18px 0;
+      }
+
+      .menu {
+        gap: 13px 17px;
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        padding: 82px 0 68px;
+      }
+
+      main {
+        padding: 68px 0 85px;
+      }
+
+      section {
+        margin-bottom: 68px;
+      }
+
+      .destacado {
+        padding: 24px 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
-<main>
-<section class="card">
-  <div class="eyebrow">Seguimos en contacto</div>
-  <h1>Gracias por llegar hasta aquí.</h1>
-  <h2>Aprender a acompañarnos</h2>
-  <div class="rule"></div>
-  <p class="lead">Si has llegado a esta página después de terminar el libro, quizá nuestra conversación pueda continuar fuera de sus páginas.</p>
-  <p class="copy">Este espacio nace como un punto de encuentro sencillo. Aquí iré reuniendo las formas de contacto y los contenidos que puedan acompañar lo que empezó en el libro.</p>
-  <p class="copy">Por ahora, puedes escribirme directamente por correo. Más adelante también encontrarás aquí el acceso a mis perfiles y nuevos proyectos, sin que cambie esta dirección.</p>
-  <div class="actions">
-    <a class="btn" href="mailto:hola@soyjosemontesinos.es">hola@soyjosemontesinos.es</a>
-    <a class="btn secondary" href="#" aria-disabled="true" onclick="return false;">Instagram · próximamente</a>
-  </div>
-  <p class="signature">Un abrazo,<br><strong>Jose Montesinos</strong></p>
-  <p class="small">Esta página está pensada para crecer contigo y con el recorrido que continúe después del libro.</p>
-</section>
-</main>
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor">
+      <div class="menu">
+        <a href="/">Inicio</a>
+        <a href="/facilitacion/">Facilitación emocional</a>
+        <a href="/reiki/">Reiki</a>
+        <span class="proximamente">Experiencias</span>
+        <a class="activo" href="/libro/">Libros</a>
+        <a href="/sobre-mi/">Sobre mí</a>
+        <a href="mailto:hola@soyjosemontesinos.es">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="contenedor">
+      <p class="ceja">Libros</p>
+
+      <h1>Aprender a acompañarnos</h1>
+
+      <p class="subtitulo">
+        Un espacio para detenerte, observar y volver a ti
+      </p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <section>
+      <p>
+        <em>Aprender a acompañarnos</em> nace como una propuesta para acercarnos de una
+        manera más consciente a lo que vivimos, sentimos y necesitamos.
+      </p>
+
+      <p>
+        A través de reflexiones, prácticas y diferentes formas de observar nuestra
+        experiencia, el libro invita a desarrollar una relación más atenta con nosotros
+        mismos y a descubrir recursos que puedan acompañarnos en el día a día.
+      </p>
+
+      <p>
+        No está pensado como un manual que diga qué deberías sentir o cómo tendrías que
+        vivir determinadas situaciones. Su intención es ofrecer un punto de partida para
+        observar, experimentar y encontrar tu propia manera de relacionarte con la
+        experiencia.
+      </p>
+
+      <div class="acciones">
+        <a
+          class="boton"
+          href="https://www.amazon.es/dp/B0HHN2YT4R"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Comprar el libro
+        </a>
+
+        <a
+          class="boton"
+          href="mailto:hola@soyjosemontesinos.es?subject=Comentario%20sobre%20Aprender%20a%20acompañarnos"
+        >
+          Compartir mi experiencia
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Si has llegado hasta aquí después de leerlo</h2>
+
+      <p>
+        Si has llegado a esta web después de terminar
+        <em>Aprender a acompañarnos</em>, gracias por haber compartido conmigo ese
+        recorrido.
+      </p>
+
+      <p>
+        El libro termina en sus páginas, pero muchas de las prácticas, ideas y formas de
+        observar que aparecen en él pueden seguir desarrollándose fuera de ellas.
+      </p>
+
+      <p>
+        Esta web nace también como una continuación de ese camino. Aquí podrás conocer
+        mejor mi forma de trabajar, profundizar en algunas de las prácticas que forman
+        parte del libro y encontrar nuevos contenidos y recursos que iré incorporando con
+        el tiempo.
+      </p>
+
+      <p>
+        Y, como durante el resto del recorrido, la invitación sigue siendo la misma:
+        tomar aquello que pueda resultarte útil, experimentarlo y encontrar tu propia
+        manera de hacerlo tuyo.
+      </p>
+
+      <div class="destacado">
+        Puedes continuar explorando este espacio a través de la Facilitación Emocional,
+        Reiki o simplemente escribirme si quieres compartir alguna reflexión sobre el
+        libro.
+      </div>
+
+      <div class="acciones">
+        <a class="boton" href="/facilitacion/">Facilitación emocional</a>
+        <a class="boton" href="/reiki/">Reiki</a>
+        <a class="boton" href="mailto:hola@soyjosemontesinos.es">Contacto</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © Jose Montesinos
+  </footer>
+
 </body>
 </html>
