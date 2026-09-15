@@ -272,134 +272,134 @@
       }
     }
 
-    @media (max-width: 760px) {
-      .pagina {
-        min-height: 100vh;
-        overflow: visible;
-        background-image:
-          linear-gradient(
-            180deg,
-            rgba(242, 234, 220, 1) 0%,
-            rgba(242, 234, 220, 1) 56%,
-            rgba(242, 234, 220, 0.84) 69%,
-            rgba(242, 234, 220, 0.20) 100%
-          ),
-          url("/assets/inicio-paisaje-movil.png");
-background-size: auto 58%;
-background-position: center bottom;
-background-repeat: no-repeat;
-      }
+@media (max-width: 760px) {
 
-      .navegacion {
-  padding: 22px 24px 0;
-}
+  .pagina {
+    min-height: 100vh;
+    overflow: visible;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(242, 234, 220, 1) 0%,
+        rgba(242, 234, 220, 1) 56%,
+        rgba(242, 234, 220, 0.84) 69%,
+        rgba(242, 234, 220, 0.20) 100%
+      ),
+      url("/assets/inicio-paisaje-movil.png");
+    background-size: auto 58%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
 
-.cabecera-movil {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
+  .navegacion {
+    padding: 22px 24px 0;
+  }
 
-.marca-movil {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #696343;
-}
+  .cabecera-movil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.boton-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 42px;
-  height: 42px;
-  padding: 9px;
-  border: 1px solid rgba(93, 83, 61, 0.35);
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-}
+  .marca-movil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #696343;
+  }
 
-.boton-menu span {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #39372f;
-}
+  .boton-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    border: 1px solid rgba(93, 83, 61, 0.35);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+  }
 
-.menu {
-  display: none;
-}
-.menu.menu-abierto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
-  margin-top: 18px;
-  padding: 12px 0 4px;
-  border-top: 1px solid rgba(93, 83, 61, 0.22);
-}
+  .boton-menu span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #39372f;
+  }
 
-.menu.menu-abierto a,
-.menu.menu-abierto .proximamente {
-  width: 100%;
-  padding: 11px 0;
-  font-size: 0.82rem;
-}
-    }
+  .menu {
+    display: none;
+  }
 
-      .hero {
-  width: calc(100% - 48px);
-  min-height: auto;
-  align-items: flex-start;
-  padding: 55px 0 430px;
-}
+  .menu.menu-abierto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 18px;
+    padding: 12px 0 4px;
+    border-top: 1px solid rgba(93, 83, 61, 0.22);
+  }
 
-.contenido {
-  width: 100%;
-  margin-left: 0;
-}
+  .menu.menu-abierto a,
+  .menu.menu-abierto .proximamente {
+    width: 100%;
+    padding: 11px 0;
+    font-size: 0.82rem;
+  }
 
-.ceja {
-  margin-bottom: 18px;
-  font-size: 0.82rem;
-  letter-spacing: 0.20em;
-}
+  .hero {
+    width: calc(100% - 48px);
+    min-height: auto;
+    align-items: flex-start;
+    padding: 55px 0 430px;
+  }
 
-h1 {
-  max-width: 100%;
-  font-size: clamp(2.45rem, 10.5vw, 3.35rem);
-  line-height: 0.96;
-  letter-spacing: -0.03em;
-}
+  .contenido {
+    width: 100%;
+    margin-left: 0;
+  }
 
-.trazo {
-  width: 62px;
-  margin: 22px 0 24px 2px;
-}
+  .ceja {
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+    letter-spacing: 0.20em;
+  }
 
-.texto {
-  max-width: 100%;
-  font-size: 0.94rem;
-  line-height: 1.52;
-}
+  h1 {
+    max-width: 100%;
+    font-size: clamp(2.45rem, 10.5vw, 3.35rem);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+  }
 
-.texto p {
-  margin-bottom: 15px;
-}
+  .trazo {
+    width: 62px;
+    margin: 22px 0 24px 2px;
+  }
 
-.acciones {
-  margin-top: 23px;
-}
-      }
+  .texto {
+    max-width: 100%;
+    font-size: 0.94rem;
+    line-height: 1.52;
+  }
 
-      .palabras {
-        margin-top: 34px;
-      }
-    }
+  .texto p {
+    margin-bottom: 15px;
+  }
+
+  .acciones {
+    margin-top: 23px;
+  }
+
+  .palabras {
+    margin-top: 34px;
+  }
+}
 
   @media (max-width: 480px) {
 
