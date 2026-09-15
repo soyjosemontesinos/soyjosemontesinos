@@ -284,10 +284,10 @@
             rgba(242, 234, 220, 0.84) 69%,
             rgba(242, 234, 220, 0.20) 100%
           ),
-          url("/assets/inicio-paisaje.png");
-        background-size: auto 58%;
-        background-position: 68% bottom;
-        background-repeat: no-repeat;
+          url("/assets/inicio-paisaje-movil.png");
+background-size: auto 58%;
+background-position: center bottom;
+background-repeat: no-repeat;
       }
 
       .navegacion {
@@ -352,31 +352,48 @@
     }
 
       .hero {
-        width: calc(100% - 40px);
-        min-height: auto;
-        align-items: flex-start;
-        padding: 70px 0 390px;
-      }
+  width: calc(100% - 48px);
+  min-height: auto;
+  align-items: flex-start;
+  padding: 55px 0 430px;
+}
 
-      .contenido {
-        width: 100%;
-        margin-left: 0;
-      }
+.contenido {
+  width: 100%;
+  margin-left: 0;
+}
 
-      .ceja {
-        margin-bottom: 20px;
-        font-size: 0.95rem;
-      }
+.ceja {
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  letter-spacing: 0.20em;
+}
 
-      h1 {
-        max-width: 620px;
-        font-size: clamp(2.75rem, 12vw, 4rem);
-        line-height: 0.98;
-      }
+h1 {
+  max-width: 100%;
+  font-size: clamp(2.45rem, 10.5vw, 3.35rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+}
 
-      .texto {
-        max-width: 600px;
-        font-size: 1rem;
+.trazo {
+  width: 62px;
+  margin: 22px 0 24px 2px;
+}
+
+.texto {
+  max-width: 100%;
+  font-size: 0.94rem;
+  line-height: 1.52;
+}
+
+.texto p {
+  margin-bottom: 15px;
+}
+
+.acciones {
+  margin-top: 23px;
+}
       }
 
       .palabras {
@@ -384,39 +401,36 @@
       }
     }
 
-    @media (max-width: 480px) {
-      .pagina {
-        background-size: auto 43%;
-        background-position: 70% bottom;
-      }
+  @media (max-width: 480px) {
 
-      .menu {
-        justify-content: flex-start;
-      }
+  .pagina {
+    background-size: auto 48%;
+    background-position: center bottom;
+  }
 
-      .hero {
-        padding-top: 55px;
-        padding-bottom: 300px;
-      }
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 420px;
+  }
 
-      .acciones {
-        align-items: stretch;
-        flex-direction: column;
-      }
+  h1 {
+    font-size: clamp(2.35rem, 10.5vw, 3rem);
+  }
 
-      .boton {
-        width: 100%;
-      }
+  .acciones {
+    align-items: stretch;
+    flex-direction: column;
+  }
 
-      .palabras {
-        gap: 9px;
-        font-size: 0.6rem;
-      }
+  .boton {
+    width: 100%;
+  }
 
-      .linea-final {
-        display: none;
-      }
-    }
+  .palabras,
+  .linea-final {
+    display: none;
+  }
+}
   </style>
 </head>
 
