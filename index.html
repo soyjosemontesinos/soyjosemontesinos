@@ -65,6 +65,13 @@
       padding: 30px 40px 0;
     }
 
+    .cabecera-movil {
+  display: none;
+}
+
+.boton-menu {
+  display: none;
+}
     .menu {
       display: flex;
       justify-content: center;
@@ -284,13 +291,65 @@
       }
 
       .navegacion {
-        padding: 20px 20px 0;
-      }
+  padding: 22px 24px 0;
+}
 
-      .menu {
-        gap: 15px 20px;
-        font-size: 0.76rem;
-      }
+.cabecera-movil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.marca-movil {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #696343;
+}
+
+.boton-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border: 1px solid rgba(93, 83, 61, 0.35);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.boton-menu span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #39372f;
+}
+
+.menu {
+  display: none;
+}
+.menu.menu-abierto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 18px;
+  padding: 12px 0 4px;
+  border-top: 1px solid rgba(93, 83, 61, 0.22);
+}
+
+.menu.menu-abierto a,
+.menu.menu-abierto .proximamente {
+  width: 100%;
+  padding: 11px 0;
+  font-size: 0.82rem;
+}
+    }
 
       .hero {
         width: calc(100% - 40px);
@@ -366,7 +425,24 @@
   <main class="pagina">
 
     <nav class="navegacion" aria-label="Navegación principal">
-      <div class="menu">
+
+  <div class="cabecera-movil">
+    <span class="marca-movil">Jose Montesinos</span>
+
+    <button
+      class="boton-menu"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="menu-principal"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="menu" id="menu-principal">
         <a class="activo" href="/">Inicio</a>
         <a href="/facilitacion/">Facilitación emocional</a>
         <a href="/reiki/">Reiki</a>
@@ -435,6 +511,19 @@
     </section>
 
   </main>
+<script>
+  const botonMenu = document.querySelector(".boton-menu");
+  const menuPrincipal = document.querySelector("#menu-principal");
 
+  botonMenu.addEventListener("click", () => {
+    const abierto = menuPrincipal.classList.toggle("menu-abierto");
+
+    botonMenu.setAttribute("aria-expanded", abierto);
+    botonMenu.setAttribute(
+      "aria-label",
+      abierto ? "Cerrar menú" : "Abrir menú"
+    );
+  });
+</script>
 </body>
 </html>
