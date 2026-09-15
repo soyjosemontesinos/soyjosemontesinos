@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jose Montesinos | Acompañamiento, presencia y desarrollo personal</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Jose Montesinos | Acompañamiento, presencia y desarrollo personal
+  </title>
 
   <meta
     name="description"
@@ -12,6 +19,7 @@
   >
 
   <style>
+
     :root {
       --papel: #f2eadc;
       --tinta: #24272a;
@@ -40,11 +48,17 @@
       color: inherit;
     }
 
+
+    /* =========================================================
+       PÁGINA — ESCRITORIO
+       ========================================================= */
+
     .pagina {
       min-height: 100vh;
       position: relative;
       overflow: hidden;
       background-color: var(--papel);
+
       background-image:
         linear-gradient(
           90deg,
@@ -54,10 +68,16 @@
           rgba(242, 234, 220, 0.00) 70%
         ),
         url("/assets/inicio-paisaje.png");
+
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
     }
+
+
+    /* =========================================================
+       NAVEGACIÓN — ESCRITORIO
+       ========================================================= */
 
     .navegacion {
       position: relative;
@@ -66,28 +86,31 @@
     }
 
     .cabecera-movil {
-  display: none;
-}
+      display: none;
+    }
 
-.boton-menu {
-  display: none;
-}
+    .boton-menu {
+      display: none;
+    }
+
     .menu {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 30px;
       flex-wrap: wrap;
+
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.82rem;
       letter-spacing: 0.01em;
     }
 
     .menu a {
-      text-decoration: none;
-      color: #39372f;
       padding: 8px 0 9px;
       border-bottom: 1px solid transparent;
+      color: #39372f;
+      text-decoration: none;
+
       transition:
         color 0.2s ease,
         border-color 0.2s ease;
@@ -108,14 +131,22 @@
       cursor: default;
     }
 
+
+    /* =========================================================
+       HERO — ESCRITORIO
+       ========================================================= */
+
     .hero {
       position: relative;
       z-index: 2;
+
       width: min(1500px, calc(100% - 80px));
       min-height: calc(100vh - 100px);
       margin: 0 auto;
+
       display: flex;
       align-items: center;
+
       padding: 55px 0 70px;
     }
 
@@ -126,7 +157,9 @@
 
     .ceja {
       margin: 0 0 25px;
+
       color: var(--oliva-oscuro);
+
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.1rem;
       font-weight: 400;
@@ -137,6 +170,7 @@
     h1 {
       max-width: 760px;
       margin: 0;
+
       font-size: clamp(3.35rem, 4.5vw, 5rem);
       line-height: 0.96;
       font-weight: 400;
@@ -146,16 +180,22 @@
     .trazo {
       width: 86px;
       height: 2px;
+
       margin: 28px 0 30px 8px;
+
       background: var(--oliva);
+
       transform: rotate(-1deg);
       transform-origin: left center;
+
       opacity: 0.9;
     }
 
     .texto {
       max-width: 620px;
+
       color: #33322e;
+
       font-size: 1.05rem;
       line-height: 1.48;
     }
@@ -164,11 +204,17 @@
       margin: 0 0 17px;
     }
 
+
+    /* =========================================================
+       BOTONES
+       ========================================================= */
+
     .acciones {
       display: flex;
       align-items: center;
       gap: 15px;
       flex-wrap: wrap;
+
       margin-top: 27px;
     }
 
@@ -176,13 +222,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       min-height: 52px;
       padding: 0 26px;
+
       border: 1px solid var(--oliva);
       border-radius: 999px;
+
       text-decoration: none;
+
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.94rem;
+
       transition:
         transform 0.2s ease,
         background 0.2s ease,
@@ -224,32 +275,13 @@
       line-height: 1;
     }
 
-    .palabras {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      color: #837c6c;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
 
-    .punto {
-      font-size: 0.55rem;
-      opacity: 0.65;
-    }
+    /* =========================================================
+       TABLET
+       ========================================================= */
 
-    .linea-final {
-      width: 65px;
-      height: 1px;
-      margin-left: 7px;
-      background: var(--linea);
-    }
+    @media (max-width: 1100px) and (min-width: 761px) {
 
-    @media (max-width: 1100px) {
       .pagina {
         background-image:
           linear-gradient(
@@ -260,6 +292,7 @@
             rgba(242, 234, 220, 0.18) 100%
           ),
           url("/assets/inicio-paisaje.png");
+
         background-position: 58% center;
       }
 
@@ -272,206 +305,291 @@
       }
     }
 
-@media (max-width: 760px) {
 
-  .pagina {
-    min-height: 100vh;
-    overflow: visible;
-    background-image:
-      linear-gradient(
-        180deg,
-        rgba(242, 234, 220, 1) 0%,
-        rgba(242, 234, 220, 1) 56%,
-        rgba(242, 234, 220, 0.84) 69%,
-        rgba(242, 234, 220, 0.20) 100%
-      ),
-      url("/assets/inicio-paisaje-movil.png");
-    background-size: auto 58%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-  }
+    /* =========================================================
+       MÓVIL
+       ========================================================= */
 
-  .navegacion {
-    padding: 22px 24px 0;
-  }
+    @media (max-width: 760px) {
 
-  .cabecera-movil {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
+      /*
+       * En móvil usamos una composición vertical independiente.
+       * La imagen horizontal de escritorio deja de intervenir.
+       */
 
-  .marca-movil {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #696343;
-  }
+      .pagina {
+        min-height: 100vh;
+        overflow: visible;
 
-  .boton-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 42px;
-    height: 42px;
-    padding: 9px;
-    border: 1px solid rgba(93, 83, 61, 0.35);
-    border-radius: 50%;
-    background: transparent;
-    cursor: pointer;
-  }
+        background-color: var(--papel);
 
-  .boton-menu span {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #39372f;
-  }
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(242, 234, 220, 1) 0%,
+            rgba(242, 234, 220, 1) 52%,
+            rgba(242, 234, 220, 0.94) 60%,
+            rgba(242, 234, 220, 0.55) 69%,
+            rgba(242, 234, 220, 0.10) 79%
+          ),
+          url("/assets/inicio-paisaje-movil.png");
 
-  .menu {
-    display: none;
-  }
+        /*
+         * La ilustración conserva su proporción vertical
+         * y se ancla al final de la página.
+         */
+        background-size:
+          100% 100%,
+          100% auto;
 
-  .menu.menu-abierto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    margin-top: 18px;
-    padding: 12px 0 4px;
-    border-top: 1px solid rgba(93, 83, 61, 0.22);
-  }
+        background-position:
+          center top,
+          center bottom;
 
-  .menu.menu-abierto a,
-  .menu.menu-abierto .proximamente {
-    width: 100%;
-    padding: 11px 0;
-    font-size: 0.82rem;
-  }
+        background-repeat: no-repeat;
+      }
 
-  .hero {
-    width: calc(100% - 48px);
-    min-height: auto;
-    align-items: flex-start;
-    padding: 55px 0 430px;
-  }
 
-  .contenido {
-    width: 100%;
-    margin-left: 0;
-  }
+      /* ----- Cabecera móvil ----- */
 
-  .ceja {
-    margin-bottom: 18px;
-    font-size: 0.82rem;
-    letter-spacing: 0.20em;
-  }
+      .navegacion {
+        padding: 20px 24px 0;
+      }
 
-  h1 {
-    max-width: 100%;
-    font-size: clamp(2.45rem, 10.5vw, 3.35rem);
-    line-height: 0.96;
-    letter-spacing: -0.03em;
-  }
+      .cabecera-movil {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
 
-  .trazo {
-    width: 62px;
-    margin: 22px 0 24px 2px;
-  }
+      .marca-movil {
+        color: var(--oliva-oscuro);
 
-  .texto {
-    max-width: 100%;
-    font-size: 0.94rem;
-    line-height: 1.52;
-  }
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.76rem;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+      }
 
-  .texto p {
-    margin-bottom: 15px;
-  }
+      .boton-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
 
-  .acciones {
-    margin-top: 23px;
-  }
+        width: 42px;
+        height: 42px;
+        padding: 9px;
 
-  .palabras {
-    margin-top: 34px;
-  }
-}
+        border: 1px solid rgba(93, 83, 61, 0.35);
+        border-radius: 50%;
 
-  @media (max-width: 480px) {
+        background: rgba(242, 234, 220, 0.35);
 
-  .pagina {
-    background-size: auto 48%;
-    background-position: center bottom;
-  }
+        cursor: pointer;
+      }
 
-  .hero {
-    padding-top: 48px;
-    padding-bottom: 420px;
-  }
+      .boton-menu span {
+        display: block;
 
-  h1 {
-    font-size: clamp(2.35rem, 10.5vw, 3rem);
-  }
+        width: 100%;
+        height: 1px;
 
-  .acciones {
-    align-items: stretch;
-    flex-direction: column;
-  }
+        background: #39372f;
+      }
 
-  .boton {
-    width: 100%;
-  }
 
-  .palabras,
-  .linea-final {
-    display: none;
-  }
-}
+      /* ----- Menú desplegable ----- */
+
+      .menu {
+        display: none;
+      }
+
+      .menu.menu-abierto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+
+        margin-top: 15px;
+        padding: 10px 0 4px;
+
+        border-top: 1px solid rgba(93, 83, 61, 0.22);
+      }
+
+      .menu.menu-abierto a,
+      .menu.menu-abierto .proximamente {
+        display: block;
+
+        width: 100%;
+        padding: 10px 0;
+
+        font-size: 0.82rem;
+      }
+
+
+      /* ----- Contenido móvil ----- */
+
+      .hero {
+        width: calc(100% - 48px);
+        min-height: auto;
+        margin: 0 auto;
+
+        display: block;
+
+        /*
+         * El padding inferior crea el espacio donde se revela
+         * la ilustración vertical.
+         */
+        padding: 48px 0 112vw;
+      }
+
+      .contenido {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .ceja {
+        margin: 0 0 18px;
+
+        font-size: 0.82rem;
+        letter-spacing: 0.20em;
+      }
+
+      h1 {
+        max-width: 100%;
+
+        font-size: clamp(2.45rem, 10.5vw, 3.35rem);
+        line-height: 0.96;
+        letter-spacing: -0.03em;
+      }
+
+      .trazo {
+        width: 62px;
+        margin: 22px 0 25px 2px;
+      }
+
+      .texto {
+        max-width: 100%;
+
+        font-size: 0.94rem;
+        line-height: 1.52;
+      }
+
+      .texto p {
+        margin: 0 0 15px;
+      }
+
+      .acciones {
+        margin-top: 23px;
+      }
+    }
+
+
+    /* =========================================================
+       MÓVIL ESTRECHO
+       ========================================================= */
+
+    @media (max-width: 480px) {
+
+      .hero {
+        width: calc(100% - 40px);
+
+        padding-top: 42px;
+
+        /*
+         * Algo más de lienzo visual en teléfonos estrechos.
+         */
+        padding-bottom: 125vw;
+      }
+
+      .ceja {
+        font-size: 0.76rem;
+      }
+
+      h1 {
+        font-size: clamp(2.25rem, 10.3vw, 2.9rem);
+        line-height: 0.97;
+      }
+
+      .texto {
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .acciones {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 11px;
+      }
+
+      .boton {
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
+
 
 <body>
 
   <main class="pagina">
 
-    <nav class="navegacion" aria-label="Navegación principal">
-
-  <div class="cabecera-movil">
-    <span class="marca-movil">Jose Montesinos</span>
-
-    <button
-      class="boton-menu"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="menu-principal"
+    <nav
+      class="navegacion"
+      aria-label="Navegación principal"
     >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
 
-  <div class="menu" id="menu-principal">
+      <div class="cabecera-movil">
+
+        <span class="marca-movil">
+          Jose Montesinos
+        </span>
+
+        <button
+          class="boton-menu"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+
+      <div
+        class="menu"
+        id="menu-principal"
+      >
         <a class="activo" href="/">Inicio</a>
         <a href="/facilitacion/">Facilitación emocional</a>
         <a href="/reiki/">Reiki</a>
-        <span class="proximamente">Experiencias</span>
+
+        <span class="proximamente">
+          Experiencias
+        </span>
+
         <a href="/libro/">Libros</a>
         <a href="/sobre-mi/">Sobre mí</a>
         <a href="/contacto/">Contacto</a>
       </div>
+
     </nav>
+
 
     <section class="hero">
 
       <div class="contenido">
 
-        <p class="ceja">Jose Montesinos</p>
+        <p class="ceja">
+          Jose Montesinos
+        </p>
 
         <h1>
           Acompañamiento,<br>
@@ -479,7 +597,11 @@
           personal
         </h1>
 
-        <div class="trazo" aria-hidden="true"></div>
+        <div
+          class="trazo"
+          aria-hidden="true"
+        ></div>
+
 
         <div class="texto">
 
@@ -504,40 +626,69 @@
 
         </div>
 
+
         <div class="acciones">
 
-          <a class="boton boton-principal" href="/facilitacion/">
+          <a
+            class="boton boton-principal"
+            href="/facilitacion/"
+          >
             Facilitación emocional
-            <span class="flecha" aria-hidden="true">→</span>
+            <span
+              class="flecha"
+              aria-hidden="true"
+            >→</span>
           </a>
 
-          <a class="boton boton-secundario" href="/reiki/">
+          <a
+            class="boton boton-secundario"
+            href="/reiki/"
+          >
             Reiki
-            <span class="flecha" aria-hidden="true">→</span>
+            <span
+              class="flecha"
+              aria-hidden="true"
+            >→</span>
           </a>
 
         </div>
-
-     
 
       </div>
 
     </section>
 
   </main>
-<script>
-  const botonMenu = document.querySelector(".boton-menu");
-  const menuPrincipal = document.querySelector("#menu-principal");
 
-  botonMenu.addEventListener("click", () => {
-    const abierto = menuPrincipal.classList.toggle("menu-abierto");
 
-    botonMenu.setAttribute("aria-expanded", abierto);
-    botonMenu.setAttribute(
-      "aria-label",
-      abierto ? "Cerrar menú" : "Abrir menú"
-    );
-  });
-</script>
+  <script>
+
+    const botonMenu =
+      document.querySelector(".boton-menu");
+
+    const menuPrincipal =
+      document.querySelector("#menu-principal");
+
+
+    botonMenu.addEventListener("click", () => {
+
+      const abierto =
+        menuPrincipal.classList.toggle("menu-abierto");
+
+      botonMenu.setAttribute(
+        "aria-expanded",
+        abierto
+      );
+
+      botonMenu.setAttribute(
+        "aria-label",
+        abierto
+          ? "Cerrar menú"
+          : "Abrir menú"
+      );
+
+    });
+
+  </script>
+
 </body>
 </html>
