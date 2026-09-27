@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Videoblog | Jose Montesinos</title>
+  <meta
+    name="description"
+    content="Videoblog de Jose Montesinos. Ideas, reflexiones y contenidos desarrollados con el tiempo que cada tema necesita."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #efe6e4;
+      color: #1f2328;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(100% - 40px, 980px);
+      margin: 0 auto;
+    }
+
+    .navegacion {
+      padding: 22px 0;
+      border-bottom: 1px solid #cfc8bf;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .menu a:hover {
+      opacity: 0.65;
+    }
+
+    .menu .activo {
+      font-weight: 700;
+    }
+
+    .proximamente {
+      color: #9b958e;
+      cursor: default;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 0 90px;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .ceja {
+      margin: 0 0 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 auto 22px;
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .subtitulo {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      color: #494b4e;
+    }
+
+    main {
+      padding: 90px 0 110px;
+    }
+
+    section {
+      max-width: 760px;
+      margin: 0 auto 90px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    .video-destacado {
+      padding: 38px 0;
+      border-top: 1px solid #cfc8bf;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .etiqueta {
+      margin: 0 0 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    .meta {
+      margin: 0 0 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      color: #6b6b6b;
+    }
+
+    .acciones {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 13px 20px;
+      border: 1px solid #6f664c;
+      border-radius: 999px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .boton:hover {
+      background: #6f664c;
+      color: #efe6e4;
+    }
+
+    footer {
+      padding: 34px 20px;
+      border-top: 1px solid #cfc8bf;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      color: #6b6b6b;
+    }
+
+    @media (max-width: 700px) {
+      .contenedor {
+        width: min(100% - 28px, 980px);
+      }
+
+      .navegacion {
+        padding: 18px 0;
+      }
+
+      .menu {
+        gap: 13px 17px;
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        padding: 82px 0 68px;
+      }
+
+      main {
+        padding: 68px 0 85px;
+      }
+
+      section {
+        margin-bottom: 68px;
+      }
+
+      .video-destacado {
+        padding: 30px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor">
+      <div class="menu">
+        <a href="/">Inicio</a>
+        <a href="/facilitacion/">Facilitación emocional</a>
+        <a href="/reiki/">Reiki</a>
+        <span class="proximamente">Experiencias</span>
+        <a class="activo" href="/videoblog/">Videoblog</a>
+        <a href="/libro/">Libros</a>
+        <a href="/sobre-mi/">Sobre mí</a>
+        <a href="/contacto/">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="contenedor">
+      <p class="ceja">Videoblog</p>
+
+      <h1>Ideas que necesitan algo más de tiempo</h1>
+
+      <p class="subtitulo">
+        No todo necesita decirse deprisa. Este es un espacio para desarrollar
+        ideas, reflexiones y experiencias con el tiempo que cada una necesite.
+      </p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <section>
+      <div class="video-destacado">
+
+        <p class="etiqueta">Último vídeo</p>
+
+        <h2>Segunda presentación</h2>
+
+        <p class="meta">27 septiembre 2026 · 8 min</p>
+
+        <p>
+          Una nueva presentación y una forma de contar, con algo más de calma,
+          quién soy, cómo trabajo y qué estoy construyendo en este espacio.
+        </p>
+
+        <div class="acciones">
+          <a
+            class="boton"
+            href="/videoblog/segunda-presentacion/"
+          >
+            Ver vídeo →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © Jose Montesinos
+  </footer>
+
+</body>
+</html>
