@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Experiencias | Jose Montesinos</title>
+  <meta
+    name="description"
+    content="Recorridos, prácticas y experiencias para explorar con calma, observar y desarrollar recursos propios."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #efe6e4;
+      color: #1f2328;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(100% - 40px, 980px);
+      margin: 0 auto;
+    }
+
+    .navegacion {
+      padding: 22px 0;
+      border-bottom: 1px solid #cfc8bf;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .menu a:hover {
+      opacity: 0.65;
+    }
+
+    .menu .activo {
+      font-weight: 700;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 0 90px;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .ceja {
+      margin: 0 0 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 auto 22px;
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.08;
+      font-weight: 400;
+    }
+
+    .subtitulo {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      color: #494b4e;
+    }
+
+    main {
+      padding: 90px 0 110px;
+    }
+
+    .biblioteca {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .introduccion {
+      max-width: 680px;
+      margin: 0 0 52px;
+    }
+
+    .introduccion p {
+      margin: 0;
+    }
+
+    .recorrido {
+      display: block;
+      padding: 34px 0;
+      border-top: 1px solid #cfc8bf;
+      border-bottom: 1px solid #cfc8bf;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .recorrido:hover {
+      opacity: 0.72;
+    }
+
+    .tipo {
+      margin: 0 0 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 400;
+    }
+
+    .descripcion {
+      max-width: 620px;
+      margin: 0 0 24px;
+      color: #494b4e;
+    }
+
+    .datos {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      color: #6b6b6b;
+    }
+
+    .separador {
+      color: #aaa39a;
+    }
+
+    .acceso {
+      margin-left: auto;
+      color: #1f2328;
+    }
+
+    footer {
+      padding: 34px 20px;
+      border-top: 1px solid #cfc8bf;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      color: #6b6b6b;
+    }
+
+    @media (max-width: 700px) {
+      .contenedor {
+        width: min(100% - 28px, 980px);
+      }
+
+      .navegacion {
+        padding: 18px 0;
+      }
+
+      .menu {
+        gap: 13px 17px;
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        padding: 82px 0 68px;
+      }
+
+      main {
+        padding: 62px 0 85px;
+      }
+
+      .introduccion {
+        margin-bottom: 42px;
+      }
+
+      .recorrido {
+        padding: 30px 0;
+      }
+
+      .datos {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .separador {
+        display: none;
+      }
+
+      .acceso {
+        margin: 16px 0 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor">
+      <div class="menu">
+        <a href="/">Inicio</a>
+        <a href="/facilitacion/">Facilitación emocional</a>
+        <a href="/reiki/">Reiki</a>
+        <a class="activo" href="/experiencias/">Experiencias</a>
+        <a href="/videoblog/">Videoblog</a>
+        <a href="/libro/">Libros</a>
+        <a href="/sobre-mi/">Sobre mí</a>
+        <a href="/contacto/">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="contenedor">
+
+      <p class="ceja">Experiencias</p>
+
+      <h1>Recorridos para explorar y practicar</h1>
+
+      <p class="subtitulo">
+        Un espacio donde reunir cursos, ciclos, prácticas y materiales
+        que pueden acompañarte más allá de una sesión o encuentro.
+      </p>
+
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <div class="biblioteca">
+
+      <div class="introduccion">
+        <p>
+          Cada experiencia propone un recorrido propio. Aquí podrás volver
+          a los contenidos, prácticas y recursos que formen parte de ella
+          y acceder a los nuevos materiales a medida que estén disponibles.
+        </p>
+      </div>
+
+      <a
+        class="recorrido"
+        href="/experiencias/de-observar-a-elegir/"
+        aria-label="Entrar en De observar a elegir"
+      >
+
+        <p class="tipo">Curso de Mindfulness</p>
+
+        <h2>De observar a elegir</h2>
+
+        <p class="descripcion">
+          Un recorrido en cuatro sesiones para explorar la atención,
+          la experiencia interna y el espacio que podemos abrir antes
+          de responder.
+        </p>
+
+        <div class="datos">
+          <span>4 sesiones</span>
+          <span class="separador">·</span>
+          <span>Acceso para participantes</span>
+          <span class="acceso">Explorar recorrido →</span>
+        </div>
+
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © Jose Montesinos
+  </footer>
+
+</body>
+</html>
