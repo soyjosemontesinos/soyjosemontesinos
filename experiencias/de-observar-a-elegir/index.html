@@ -7,7 +7,7 @@
   <title>De observar a elegir | Jose Montesinos</title>
   <meta
     name="description"
-    content="De observar a elegir. Curso de Mindfulness en cuatro sesiones."
+    content="De observar a elegir. Curso introductorio de mindfulness, atención y autoconocimiento en tres sesiones presenciales."
   >
 
   <style>
@@ -184,14 +184,42 @@
     }
 
     .introduccion-recorrido {
-      max-width: 620px;
-      margin: 0 0 52px;
+      max-width: 650px;
+      margin: 0 0 54px;
     }
 
     .introduccion-recorrido p {
-      margin: 0;
+      margin: 0 0 18px;
       color: #494b4e;
     }
+
+    .introduccion-recorrido p:last-child {
+      margin-bottom: 0;
+    }
+
+    .idea-recorrido {
+      margin: 34px 0 0;
+      padding: 20px 0;
+      border-top: 1px solid #cfc8bf;
+      border-bottom: 1px solid #cfc8bf;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      color: #6f664c;
+    }
+
+    .titulo-apartado {
+      margin: 0 0 32px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    /* SESIONES */
 
     .sesiones {
       position: relative;
@@ -259,7 +287,7 @@
     }
 
     .contenido-sesion h2 {
-      margin: 0 0 4px;
+      margin: 0 0 8px;
       font-size: clamp(1.55rem, 4vw, 2.15rem);
       line-height: 1.2;
       font-weight: 400;
@@ -268,6 +296,13 @@
     .contenido-sesion p {
       margin: 0;
       color: #65615c;
+    }
+
+    .fecha-sesion {
+      margin-bottom: 10px !important;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      color: #6f664c !important;
     }
 
     .enlace-sesion {
@@ -281,6 +316,43 @@
 
     .sesion-proxima {
       opacity: 0.62;
+    }
+
+    /* INFORMACIÓN PRÁCTICA */
+
+    .informacion-practica {
+      margin-top: 68px;
+      padding-top: 38px;
+      border-top: 1px solid #cfc8bf;
+    }
+
+    .datos-practicos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px 34px;
+    }
+
+    .dato h3 {
+      margin: 0 0 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6f664c;
+    }
+
+    .dato p {
+      margin: 0;
+      color: #494b4e;
+    }
+
+    .nota-practica {
+      margin: 34px 0 0;
+      padding-top: 24px;
+      border-top: 1px solid #cfc8bf;
+      font-size: 0.95rem;
+      color: #65615c;
     }
 
     footer {
@@ -346,6 +418,19 @@
         height: 40px;
         font-size: 0.7rem;
       }
+
+      .datos-practicos {
+        grid-template-columns: 1fr;
+        gap: 23px;
+      }
+
+      .informacion-practica {
+        margin-top: 54px;
+      }
+
+      .idea-recorrido {
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -371,7 +456,7 @@
     <div class="contenedor">
       <p class="ceja">Curso de Mindfulness</p>
       <h1>De observar a elegir</h1>
-      <p class="subtitulo">Un recorrido en cuatro sesiones</p>
+      <p class="subtitulo">Observar · Reconocer · Elegir</p>
     </div>
   </header>
 
@@ -380,6 +465,7 @@
     <a class="volver" href="/experiencias/">← Experiencias</a>
 
     <!-- PUERTA DE ACCESO -->
+
     <section class="acceso" id="puerta-acceso">
 
       <h2>Acceso al recorrido</h2>
@@ -396,35 +482,73 @@
           autocomplete="off"
           placeholder="Clave de acceso"
           aria-label="Clave de acceso"
+          required
         >
         <button type="submit">Entrar →</button>
       </form>
 
-      <p class="mensaje-error" id="mensaje-error" aria-live="polite"></p>
+      <p
+        class="mensaje-error"
+        id="mensaje-error"
+        aria-live="polite"
+      ></p>
 
     </section>
 
     <!-- RECORRIDO DESBLOQUEADO -->
+
     <section class="recorrido" id="recorrido">
 
       <div class="introduccion-recorrido">
+
         <p>
-          Este espacio acompaña el recorrido entre una sesión y la siguiente.
-          Aquí podrás volver a las ideas, prácticas y recursos que vayamos
-          incorporando a lo largo del curso.
+          Una experiencia introductoria de mindfulness, atención y
+          autoconocimiento, orientada a explorar nuestra experiencia
+          cotidiana mediante explicaciones accesibles, prácticas
+          guiadas y espacios de reflexión.
         </p>
+
+        <p>
+          No necesitas conocimientos previos ni experiencia con la
+          meditación. Cada persona podrá adaptar las prácticas y
+          decidir libremente cuánto desea compartir.
+        </p>
+
+        <p>
+          Este espacio acompaña el recorrido entre una sesión y la
+          siguiente. Aquí podrás volver a las ideas, prácticas y
+          recursos que vayamos incorporando a lo largo del curso.
+        </p>
+
+        <div class="idea-recorrido">
+          OBSERVAR → RECONOCER → ELEGIR
+        </div>
+
       </div>
 
+      <h2 class="titulo-apartado">El recorrido</h2>
+
       <div class="sesiones">
+
+        <!-- SESIÓN 1 -->
 
         <article class="sesion">
 
           <div class="numero">S1</div>
 
           <div class="contenido-sesion">
+
             <p class="estado">Disponible</p>
+
             <h2>Parar y observar</h2>
-            <p>Cuerpo y presencia</p>
+
+            <p class="fecha-sesion">Jueves 15 de octubre</p>
+
+            <p>
+              Atención y experiencia presente. Una primera aproximación
+              a la observación consciente y al movimiento de nuestra
+              atención.
+            </p>
 
             <a
               class="enlace-sesion"
@@ -432,47 +556,98 @@
             >
               Entrar en la sesión →
             </a>
+
           </div>
 
         </article>
+
+        <!-- SESIÓN 2 -->
 
         <article class="sesion sesion-proxima">
 
           <div class="numero">S2</div>
 
           <div class="contenido-sesion">
+
             <p class="estado">Próximamente</p>
-            <h2>Ampliar y distinguir</h2>
-            <p>Atención y pensamiento</p>
+
+            <h2>Distinguir y reconocer</h2>
+
+            <p class="fecha-sesion">Jueves 22 de octubre</p>
+
+            <p>
+              Pensamientos, emociones y sensaciones corporales.
+              Aprender a distinguir aspectos de nuestra experiencia
+              interna y observar cómo se relacionan.
+            </p>
+
           </div>
 
         </article>
+
+        <!-- SESIÓN 3 -->
 
         <article class="sesion sesion-proxima">
 
           <div class="numero">S3</div>
 
           <div class="contenido-sesion">
+
             <p class="estado">Próximamente</p>
-            <h2>Reconocer</h2>
-            <p>Emoción e impulso</p>
-          </div>
 
-        </article>
-
-        <article class="sesion sesion-proxima">
-
-          <div class="numero">S4</div>
-
-          <div class="contenido-sesion">
-            <p class="estado">Próximamente</p>
             <h2>Pausar y elegir</h2>
-            <p>Respuesta e integración</p>
+
+            <p class="fecha-sesion">Jueves 29 de octubre</p>
+
+            <p>
+              Respuestas automáticas e integración cotidiana.
+              Explorar cómo una pausa puede ayudarnos a reconocer
+              lo que ocurre antes de responder.
+            </p>
+
           </div>
 
         </article>
 
       </div>
+
+      <!-- INFORMACIÓN PRÁCTICA -->
+
+      <section class="informacion-practica">
+
+        <h2 class="titulo-apartado">Información práctica</h2>
+
+        <div class="datos-practicos">
+
+          <div class="dato">
+            <h3>Fechas</h3>
+            <p>15, 22 y 29 de octubre de 2026</p>
+          </div>
+
+          <div class="dato">
+            <h3>Duración</h3>
+            <p>Tres encuentros de aproximadamente 90 minutos</p>
+          </div>
+
+          <div class="dato">
+            <h3>Lugar</h3>
+            <p>Comunidad Hindú de Melilla</p>
+          </div>
+
+          <div class="dato">
+            <h3>Modalidad</h3>
+            <p>Presencial · No se requiere experiencia previa</p>
+          </div>
+
+        </div>
+
+        <p class="nota-practica">
+          Este curso es una actividad formativa y experiencial.
+          No constituye una intervención sanitaria ni un espacio
+          de terapia psicológica.
+        </p>
+
+      </section>
 
     </section>
 
