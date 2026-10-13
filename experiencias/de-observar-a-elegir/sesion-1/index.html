@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>S1 · Parar y observar | De observar a elegir</title>
+
   <meta
     name="description"
-    content="Primera sesión de De observar a elegir: parar y observar, volver al cuerpo y entrenar la atención."
+    content="Recursos de la primera sesión de De observar a elegir: atención, propuesta semanal Parar → Notar y práctica escrita Volver al cuerpo."
   >
 
   <style>
@@ -37,6 +38,8 @@
       margin: 0 auto;
     }
 
+    /* NAVEGACIÓN PRINCIPAL */
+
     .navegacion {
       padding: 22px 0;
       border-bottom: 1px solid #cfc8bf;
@@ -64,6 +67,8 @@
     .menu .activo {
       font-weight: 700;
     }
+
+    /* CABECERA */
 
     .hero {
       padding: 82px 0 66px;
@@ -94,6 +99,8 @@
       color: #56514a;
     }
 
+    /* CONTENIDO GENERAL */
+
     main {
       padding: 48px 0 105px;
     }
@@ -105,11 +112,17 @@
 
     .volver {
       display: inline-block;
-      margin-bottom: 42px;
+      margin-bottom: 38px;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.86rem;
       text-decoration: none;
       color: #6f664c;
+    }
+
+    .introduccion {
+      margin: 0 0 42px;
+      font-size: 1.12rem;
+      color: #56514a;
     }
 
     /* ÍNDICE */
@@ -132,19 +145,18 @@
 
     .indice-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 34px;
+      grid-template-columns: 1fr;
     }
 
     .indice a {
       display: flex;
       gap: 13px;
-      padding: 12px 0;
+      padding: 13px 0;
       border-top: 1px solid rgba(207, 200, 191, 0.65);
       text-decoration: none;
     }
 
-    .indice a:nth-child(-n+2) {
+    .indice a:first-child {
       border-top: 0;
     }
 
@@ -166,8 +178,7 @@
       padding: 0 0 82px;
     }
 
-    .bloque + .bloque,
-    .bloque + .cierre {
+    .bloque + .bloque {
       padding-top: 72px;
       border-top: 1px solid #cfc8bf;
     }
@@ -180,23 +191,42 @@
       color: #6f664c;
     }
 
-    .bloque h2,
-    .cierre h2 {
+    .bloque h2 {
       margin: 0 0 25px;
       font-size: clamp(2rem, 5vw, 2.8rem);
       line-height: 1.15;
       font-weight: 400;
     }
 
-    .bloque p,
-    .cierre p {
+    .bloque p {
       margin: 0 0 20px;
     }
 
-    /* DESTACADOS */
+    /* IDEAS PRINCIPALES */
+
+    .ideas {
+      margin-top: 34px;
+      border-top: 1px solid #cfc8bf;
+    }
+
+    .idea {
+      padding: 27px 0;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .idea h3 {
+      margin: 0 0 10px;
+      font-size: 1.23rem;
+      font-weight: 400;
+    }
+
+    .idea p {
+      margin: 0;
+      color: #55514b;
+    }
 
     .secuencia {
-      margin: 34px 0;
+      margin: 28px 0;
       padding: 22px 0;
       border-top: 1px solid #cfc8bf;
       border-bottom: 1px solid #cfc8bf;
@@ -208,80 +238,7 @@
       color: #514b3d;
     }
 
-    .definicion {
-      margin: 34px 0;
-      padding: 26px 28px;
-      border-left: 2px solid #6f664c;
-    }
-
-    .definicion .etiqueta {
-      margin: 0 0 9px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: #6f664c;
-    }
-
-    .definicion p:last-child {
-      margin-bottom: 0;
-      font-size: 1.22rem;
-      line-height: 1.55;
-    }
-
-    .frase-destacada {
-      margin: 30px 0;
-      font-size: 1.28rem;
-      line-height: 1.55;
-      color: #4e493e;
-    }
-
-    /* ANCLAS CORPORALES */
-
-    .anclas {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin: 28px 0;
-    }
-
-    .ancla {
-      padding: 8px 13px;
-      border: 1px solid #cfc8bf;
-      border-radius: 999px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.78rem;
-      color: #5f594d;
-    }
-
-    /* RECURSOS */
-
-    .recurso-pendiente {
-      margin: 30px 0;
-      padding: 26px;
-      border: 1px solid #cfc8bf;
-    }
-
-    .recurso-pendiente .etiqueta {
-      margin: 0 0 7px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: #6f664c;
-    }
-
-    .recurso-pendiente .titulo-recurso {
-      margin: 0 0 6px;
-      font-size: 1.18rem;
-    }
-
-    .recurso-pendiente p:last-child {
-      margin-bottom: 0;
-      color: #65615c;
-    }
-
-    /* MICROPRÁCTICA */
+    /* PROPUESTA SEMANAL */
 
     .micropractica {
       margin: 32px 0;
@@ -306,61 +263,61 @@
       font-size: 1.12rem;
     }
 
-    /* RECORDATORIOS */
-
-    .recordatorios {
-      margin-top: 32px;
-      border-top: 1px solid #cfc8bf;
-    }
-
-    .recordatorio {
-      padding: 25px 0;
-      border-bottom: 1px solid #cfc8bf;
-    }
-
-    .recordatorio h3 {
-      margin: 0 0 8px;
-      font-size: 1.17rem;
-      font-weight: 400;
-    }
-
-    .recordatorio p {
-      margin: 0;
-      color: #55514b;
-    }
-
-    /* OPCIONES SONORAS */
-
-    .opciones-sonoras {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin: 27px 0;
-    }
-
-    .opcion-sonora {
-      padding: 8px 13px;
-      border: 1px solid #cfc8bf;
-      border-radius: 999px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.78rem;
-      color: #5f594d;
-    }
-
-    /* CIERRE */
-
-    .cierre {
-      padding-bottom: 82px;
-    }
-
     .idea-final {
-      margin-top: 36px;
+      margin-top: 40px;
       padding: 34px 0 6px;
       border-top: 1px solid #cfc8bf;
       text-align: center;
       font-size: clamp(1.4rem, 4vw, 1.9rem);
       line-height: 1.55;
+      color: #4e493e;
     }
+
+    /* PRÁCTICA ESCRITA */
+
+    .pasos {
+      margin-top: 36px;
+      border-top: 1px solid #cfc8bf;
+    }
+
+    .paso {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 18px;
+      padding: 29px 0;
+      border-bottom: 1px solid #cfc8bf;
+    }
+
+    .paso-numero {
+      padding-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      color: #6f664c;
+    }
+
+    .paso h3 {
+      margin: 0 0 10px;
+      font-size: 1.23rem;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    .paso p {
+      margin: 0 0 13px;
+      color: #55514b;
+    }
+
+    .paso p:last-child {
+      margin-bottom: 0;
+    }
+
+    .nota-practica {
+      margin-top: 32px;
+      font-size: 0.97rem;
+      color: #5f594d;
+    }
+
+    /* NAVEGACIÓN INFERIOR */
 
     .navegacion-sesion {
       display: flex;
@@ -387,6 +344,8 @@
       color: #6b6b6b;
     }
 
+    /* ADAPTACIÓN A MÓVILES */
+
     @media (max-width: 700px) {
       .contenedor {
         width: min(100% - 28px, 980px);
@@ -411,32 +370,22 @@
       }
 
       .volver {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
+      }
+
+      .introduccion {
+        font-size: 1.05rem;
       }
 
       .indice {
         margin-bottom: 65px;
       }
 
-      .indice-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .indice a,
-      .indice a:nth-child(-n+2) {
-        border-top: 1px solid rgba(207, 200, 191, 0.65);
-      }
-
-      .indice a:first-child {
-        border-top: 0;
-      }
-
       .bloque {
         padding-bottom: 65px;
       }
 
-      .bloque + .bloque,
-      .bloque + .cierre {
+      .bloque + .bloque {
         padding-top: 58px;
       }
 
@@ -445,22 +394,17 @@
         font-size: 0.82rem;
       }
 
-      .definicion {
-        padding: 22px 0 22px 20px;
-      }
-
-      .recurso-pendiente {
-        padding: 22px 19px;
-      }
-
-      .cierre {
-        padding-bottom: 65px;
+      .paso {
+        grid-template-columns: 30px 1fr;
+        gap: 12px;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
 
   <nav class="navegacion" aria-label="Navegación principal">
     <div class="contenedor">
@@ -476,6 +420,8 @@
       </div>
     </div>
   </nav>
+
+  <!-- CABECERA -->
 
   <header class="hero">
     <div class="contenedor">
@@ -495,291 +441,114 @@
         ← De observar a elegir
       </a>
 
+      <p class="introduccion">
+        Este espacio reúne algunas ideas y propuestas de la primera
+        sesión para que puedas volver a ellas cuando lo necesites.
+      </p>
+
+      <!-- ÍNDICE -->
+
       <nav class="indice" aria-label="Contenido de la sesión">
 
         <p class="indice-titulo">En esta sesión</p>
 
         <div class="indice-grid">
 
-          <a href="#parar">
+          <a href="#explorado">
             <span class="indice-numero">01</span>
-            <span class="indice-texto">Parar durante unos instantes</span>
-          </a>
-
-          <a href="#cuerpo">
-            <span class="indice-numero">02</span>
-            <span class="indice-texto">Volver al cuerpo</span>
-          </a>
-
-          <a href="#practica">
-            <span class="indice-numero">03</span>
-            <span class="indice-texto">Práctica guiada · Volver al cuerpo</span>
+            <span class="indice-texto">Lo que hemos explorado</span>
           </a>
 
           <a href="#esta-semana">
-            <span class="indice-numero">04</span>
+            <span class="indice-numero">02</span>
             <span class="indice-texto">Esta semana · Parar → Notar</span>
           </a>
 
-          <a href="#recordar">
-            <span class="indice-numero">05</span>
-            <span class="indice-texto">Para recordar</span>
-          </a>
-
-          <a href="#acompanar">
-            <span class="indice-numero">06</span>
-            <span class="indice-texto">Para acompañar tu práctica</span>
+          <a href="#volver-al-cuerpo">
+            <span class="indice-numero">03</span>
+            <span class="indice-texto">Práctica escrita · Volver al cuerpo</span>
           </a>
 
         </div>
       </nav>
 
-      <!-- 01 -->
+      <!-- 01 · RESUMEN DE LA SESIÓN -->
 
-      <section class="bloque" id="parar">
+      <section class="bloque" id="explorado">
 
         <p class="numero-bloque">01</p>
-        <h2>Parar durante unos instantes</h2>
+        <h2>Lo que hemos explorado</h2>
 
         <p>
-          En esta primera sesión hemos comenzado por algo sencillo:
-          parar durante unos instantes y observar qué está ocurriendo.
+          Durante esta primera sesión hemos comenzado a observar
+          cómo funciona nuestra atención y qué ocurre cuando
+          decidimos dirigirla voluntariamente hacia algo.
         </p>
 
-        <p>
-          Al dirigir voluntariamente la atención hacia algo —la respiración,
-          los apoyos del cuerpo o cualquier otra referencia— probablemente
-          hemos comprobado también que la atención no permanece siempre
-          donde queremos.
-        </p>
+        <div class="ideas">
 
-        <p>
-          Puede aparecer un pensamiento, un sonido, una sensación o
-          cualquier otra cosa que capte nuestra atención.
-        </p>
+          <div class="idea">
+            <h3>La atención se mueve</h3>
 
-        <p>
-          Eso no significa que estemos haciendo mal la práctica.
-        </p>
+            <p>
+              Podemos dirigir nuestra atención hacia una referencia
+              concreta, pero también puede ser captada por sonidos,
+              pensamientos, sensaciones y otros estímulos.
+              Que esto ocurra es parte de nuestra experiencia cotidiana.
+            </p>
+          </div>
 
-        <p>
-          De hecho, hemos explorado un movimiento muy sencillo:
-        </p>
+          <div class="idea">
+            <h3>Darse cuenta también es practicar</h3>
+
+            <p>
+              Cuando prestamos atención a una referencia concreta,
+              es normal que en algún momento nos distraigamos.
+              Reconocer que nuestra atención se ha desplazado
+              nos permite regresar a aquello que habíamos elegido.
+            </p>
+          </div>
+
+        </div>
 
         <div class="secuencia">
           ATENDER → DISTRAERSE → DARSE CUENTA → VOLVER
         </div>
 
-        <div class="definicion">
-          <p class="etiqueta">
-            Nuestra primera experiencia · ¿Qué está ocurriendo ahora?
-          </p>
-          <p>
-            Comenzamos con una práctica breve de observación abierta,
-            sin necesidad de concentrarnos en nada concreto.
-          </p>
+        <div class="ideas">
+
+          <div class="idea">
+            <h3>Mindfulness: qué observamos y cómo lo observamos</h3>
+
+            <p>
+              Practicar mindfulness consiste en prestar atención
+              intencionadamente a nuestra experiencia presente.
+              No se trata de dejar la mente en blanco ni de
+              conseguir una concentración perfecta.
+              También importa la actitud con la que observamos:
+              podemos intentar hacerlo con curiosidad y apertura,
+              sin juzgar inmediatamente lo que aparece.
+            </p>
+          </div>
+
         </div>
-
-        <p>
-          La propuesta consistía simplemente en prestar atención a
-          lo que aparecía en nuestra experiencia: sonidos, sensaciones
-          corporales, pensamientos o cualquier otro elemento que
-          pudiéramos reconocer.
-        </p>
-
-        <p>
-          No buscábamos modificar nada ni alcanzar un estado
-          determinado. Solo observar qué estaba ocurriendo
-          en ese momento.
-        </p>
-
-        <p>
-          No se trata de conseguir una concentración perfecta ni de impedir
-          que aparezcan pensamientos.
-        </p>
-
-        <p>
-          Darnos cuenta de que nuestra atención se ha marchado ya forma
-          parte de la práctica.
-        </p>
-
-        <p>
-          Y cuando nos damos cuenta, aparece la posibilidad de volver.
-        </p>
-
-        <div class="definicion">
-          <p class="etiqueta">¿Qué entendemos aquí por mindfulness?</p>
-          <p>
-            Prestar atención conscientemente a lo que está ocurriendo
-            mientras está ocurriendo.
-          </p>
-        </div>
-
-        <p>
-          Observar también implica intentar reconocer lo que aparece
-          sin clasificarlo inmediatamente como bueno o malo, correcto
-          o incorrecto.
-        </p>
-
-        <p>
-          No buscamos dejar la mente en blanco.
-        </p>
-
-        <p>
-          No necesitamos concentrarnos perfectamente.
-        </p>
-
-        <p>
-          Tampoco buscamos necesariamente relajarnos o alcanzar un estado
-          determinado.
-        </p>
-
-        <p class="frase-destacada">
-          La propuesta es mucho más sencilla: observar la experiencia
-          que ya está ocurriendo.
-        </p>
-
-        <p>
-          En nuestra vida cotidiana hacemos muchas cosas de manera automática.
-          Esto no es necesariamente un problema: muchos automatismos son útiles
-          y nos permiten desenvolvernos sin tener que decidir conscientemente
-          cada pequeño movimiento.
-        </p>
-
-        <p>
-          No pretendemos estar pendientes de nosotros mismos durante todo el día.
-        </p>
-
-        <p>
-          Lo que estamos entrenando es la posibilidad de parar cuando pueda
-          resultarnos útil y observar algo de lo que está ocurriendo en ese
-          momento.
-        </p>
 
       </section>
 
-      <!-- 02 -->
-
-      <section class="bloque" id="cuerpo">
-
-        <p class="numero-bloque">02</p>
-        <h2>Volver al cuerpo</h2>
-
-        <p>
-          Cuando queremos parar y dirigir nuevamente nuestra atención al
-          presente, podemos utilizar algo que siempre llevamos con nosotros:
-          el cuerpo.
-        </p>
-
-        <p>
-          Durante la sesión hemos explorado cuatro referencias muy sencillas:
-        </p>
-
-        <div class="anclas">
-          <span class="ancla">PIES</span>
-          <span class="ancla">APOYOS</span>
-          <span class="ancla">MANOS</span>
-          <span class="ancla">RESPIRACIÓN</span>
-        </div>
-
-        <p>
-          Quizá te resulte fácil percibir el contacto de los pies con el suelo.
-          Tal vez notes con mayor claridad el peso del cuerpo sobre la silla,
-          la posición de las manos o el movimiento natural de la respiración.
-        </p>
-
-        <p>
-          No existe una referencia que tenga que funcionar mejor para todo
-          el mundo.
-        </p>
-
-        <p>
-          Podemos utilizar cualquiera de ellas como una especie de ancla para
-          la atención: un punto al que dirigirla y al que regresar cuando
-          descubrimos que se ha marchado hacia un pensamiento, un sonido,
-          otra sensación o cualquier otra cosa.
-        </p>
-
-        <p>
-          El ancla no tiene que impedir que nos distraigamos.
-        </p>
-
-        <p class="frase-destacada">
-          Su función es mucho más sencilla: ofrecernos un lugar al que volver.
-        </p>
-
-        <p>
-          No necesitas respirar de una manera determinada, adoptar una postura
-          especial ni intentar provocar ninguna sensación.
-        </p>
-
-        <p>
-          Puedes empezar simplemente observando lo que ya está ocurriendo.
-        </p>
-
-        <p>
-          Después de utilizar una referencia corporal, también podemos
-          ampliar nuestra atención y observar otros aspectos de la
-          experiencia, sin necesidad de permanecer todo el tiempo
-          concentrados en un único punto.
-        </p>
-
-      </section>
-
-      <!-- 03 -->
-
-      <section class="bloque" id="practica">
-
-        <p class="numero-bloque">03</p>
-        <h2>Práctica guiada · Volver al cuerpo</h2>
-
-        <p>
-          Si quieres volver a experimentar la práctica que hemos realizado
-          durante la sesión, aquí podrás encontrarla en formato de audio.
-        </p>
-
-        <p>
-          Busca una posición suficientemente cómoda para permanecer unos
-          minutos y recuerda que puedes adaptar la práctica en cualquier
-          momento: cambiar de postura, mantener los ojos abiertos o detenerla
-          si lo necesitas.
-        </p>
-
-        <div class="recurso-pendiente">
-          <p class="etiqueta">Práctica guiada</p>
-          <p class="titulo-recurso">▶ Volver al cuerpo</p>
-          <p>El audio estará disponible próximamente.</p>
-        </div>
-
-        <p>
-          No necesitas conseguir ningún resultado concreto.
-        </p>
-
-        <p>
-          Si tu atención se marcha y en algún momento te das cuenta, ese
-          momento de darte cuenta también forma parte de la práctica.
-        </p>
-
-        <p>
-          Y desde ahí, simplemente puedes volver.
-        </p>
-
-      </section>
-
-      <!-- 04 -->
+      <!-- 02 · PROPUESTA SEMANAL -->
 
       <section class="bloque" id="esta-semana">
 
-        <p class="numero-bloque">04</p>
+        <p class="numero-bloque">02</p>
         <h2>Esta semana · Parar → Notar</h2>
 
         <p>
-          No necesitas reservar un momento especial ni convertirlo en una tarea.
+          Te proponemos una pequeña invitación para la vida cotidiana.
         </p>
 
         <p>
-          Durante la semana, si en algún momento te acuerdas, prueba simplemente
-          a parar durante unos instantes.
+          En algún momento del día, si te acuerdas, prueba a
+          detenerte durante unos instantes y observar.
         </p>
 
         <div class="micropractica">
@@ -797,152 +566,19 @@
         </div>
 
         <p>
-          No necesitas responderlas todas ni encontrar nada concreto.
+          No necesitas responderlas todas, encontrar algo especial
+          ni dedicarle un tiempo determinado.
         </p>
 
         <p>
-          Puedes elegir una referencia, permanecer con ella unos instantes
-          y después continuar con lo que estabas haciendo.
+          Puedes elegir una referencia, observarla durante unos
+          instantes y después continuar con lo que estabas haciendo.
         </p>
 
         <p>
-          Mientras esperas, sentado en una mesa, caminando, antes de responder
-          un mensaje o en cualquier otro momento cotidiano puede aparecer una
-          oportunidad para probarlo.
-        </p>
-
-        <p>
-          No buscamos estar pendientes de nosotros mismos durante todo el día.
-        </p>
-
-        <p class="frase-destacada">
-          Buscamos algo bastante más sencillo: recordar alguna vez que podemos
-          parar y observar.
-        </p>
-
-      </section>
-
-      <!-- 05 -->
-
-      <section class="bloque" id="recordar">
-
-        <p class="numero-bloque">05</p>
-        <h2>Para recordar</h2>
-
-        <div class="recordatorios">
-
-          <div class="recordatorio">
-            <h3>La atención se mueve</h3>
-            <p>
-              Que nuestra atención se marche no significa que estemos haciendo
-              mal la práctica. Darse cuenta también forma parte de ella.
-            </p>
-          </div>
-
-          <div class="recordatorio">
-            <h3>No buscamos una experiencia concreta</h3>
-            <p>
-              No necesitas dejar la mente en blanco, concentrarte perfectamente
-              ni terminar más relajado. Observa lo que está ocurriendo.
-            </p>
-          </div>
-
-          <div class="recordatorio">
-            <h3>El cuerpo puede ayudarnos a volver</h3>
-            <p>
-              Pies · apoyos · manos · respiración. Explora qué referencias
-              te resultan más accesibles.
-            </p>
-          </div>
-
-          <div class="recordatorio">
-            <h3>Parar no significa resolver</h3>
-            <p>
-              No siempre necesitamos cambiar inmediatamente lo que estamos
-              experimentando. A veces, el primer paso puede ser simplemente
-              darnos cuenta de lo que está ocurriendo.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- 06 -->
-
-      <section class="bloque" id="acompanar">
-
-        <p class="numero-bloque">06</p>
-        <h2>Para acompañar tu práctica</h2>
-
-        <p>
-          No necesitas música ni ningún sonido especial para practicar.
-        </p>
-
-        <p class="frase-destacada">
-          El silencio es suficiente.
-        </p>
-
-        <p>
-          Aun así, algunas personas prefieren utilizar un fondo sonoro discreto.
-          Por eso iremos reuniendo aquí diferentes opciones que puedes probar
-          libremente.
-        </p>
-
-        <div class="opciones-sonoras">
-          <span class="opcion-sonora">Silencio</span>
-          <span class="opcion-sonora">Ruido verde</span>
-          <span class="opcion-sonora">Ruido rosa</span>
-          <span class="opcion-sonora">Ambientes naturales</span>
-        </div>
-
-        <div class="recurso-pendiente">
-          <p class="etiqueta">Recursos sonoros</p>
-          <p>
-            Este espacio se irá completando a medida que seleccionemos
-            los recursos.
-          </p>
-        </div>
-
-        <p>
-          Puedes utilizar alguno de estos recursos, probar diferentes opciones
-          o prescindir completamente de ellos.
-        </p>
-
-        <p>
-          Si utilizas un sonido, intenta que funcione simplemente como
-          acompañamiento de fondo, sin necesidad de prestarle atención.
-        </p>
-
-        <p>
-          Lo importante sigue siendo la práctica:
-        </p>
-
-        <div class="secuencia">
-          PARAR · ATENDER · DARSE CUENTA · VOLVER
-        </div>
-
-      </section>
-
-      <!-- CIERRE -->
-
-      <section class="cierre">
-
-        <p class="numero-bloque">UNA IDEA PARA LLEVARNOS</p>
-        <h2>Parar no tiene que resolver</h2>
-
-        <p>
-          No necesitamos convertir cada pausa en una solución.
-        </p>
-
-        <p>
-          No siempre habrá algo que comprender, cambiar o decidir en ese
-          momento.
-        </p>
-
-        <p>
-          A veces puede ser suficiente con detenernos durante unos instantes
-          y observar algo de lo que está ocurriendo.
+          No se trata de estar pendientes de nosotros mismos
+          durante todo el día, sino de recordar de vez en cuando
+          que podemos parar y observar.
         </p>
 
         <div class="idea-final">
@@ -951,6 +587,169 @@
         </div>
 
       </section>
+
+      <!-- 03 · PRÁCTICA ESCRITA -->
+
+      <section class="bloque" id="volver-al-cuerpo">
+
+        <p class="numero-bloque">03</p>
+        <h2>Práctica escrita · Volver al cuerpo</h2>
+
+        <p>
+          Si te apetece repetir por tu cuenta la práctica que
+          realizamos durante la sesión, puedes utilizar esta
+          pequeña guía como referencia.
+        </p>
+
+        <p>
+          No necesitas seguirla de manera rígida ni conseguir
+          ningún resultado concreto.
+        </p>
+
+        <div class="pasos">
+
+          <!-- PASO 1 -->
+
+          <div class="paso">
+
+            <span class="paso-numero">01</span>
+
+            <div>
+              <h3>Preparar</h3>
+
+              <p>
+                Busca una posición suficientemente cómoda.
+                Puedes permanecer sentado, de pie o adoptar
+                otra postura que te resulte adecuada.
+              </p>
+
+              <p>
+                No necesitas cerrar los ojos. Puedes cambiar
+                de postura, adaptar la práctica o detenerla
+                en cualquier momento.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- PASO 2 -->
+
+          <div class="paso">
+
+            <span class="paso-numero">02</span>
+
+            <div>
+              <h3>Explorar</h3>
+
+              <p>
+                Lleva suavemente la atención hacia el cuerpo.
+                Puedes comenzar por los pies, el contacto
+                con el suelo o los puntos de apoyo.
+              </p>
+
+              <p>
+                Observa también las manos y, si te resulta
+                cómodo, el movimiento natural de la respiración.
+                No necesitas modificar nada.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- PASO 3 -->
+
+          <div class="paso">
+
+            <span class="paso-numero">03</span>
+
+            <div>
+              <h3>Elegir y volver</h3>
+
+              <p>
+                Elige una de esas referencias y permanece
+                atento a ella durante unos instantes.
+              </p>
+
+              <p>
+                Si aparece un pensamiento, un sonido u otra
+                sensación que capta tu atención, puedes
+                reconocerlo y regresar a la referencia elegida.
+              </p>
+
+              <p>
+                No pasa nada si necesitas volver muchas veces.
+                Darse cuenta también forma parte de la práctica.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- PASO 4 -->
+
+          <div class="paso">
+
+            <span class="paso-numero">04</span>
+
+            <div>
+              <h3>Ampliar</h3>
+
+              <p>
+                Cuando quieras, deja de mantener la atención
+                únicamente en ese punto y permite que se amplíe.
+              </p>
+
+              <p>
+                Observa de manera más abierta las sensaciones
+                del cuerpo, los sonidos del entorno o los
+                pensamientos que puedan aparecer.
+              </p>
+
+              <p>
+                No necesitas seguirlos, rechazarlos ni
+                cambiar lo que estás experimentando.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- PASO 5 -->
+
+          <div class="paso">
+
+            <span class="paso-numero">05</span>
+
+            <div>
+              <h3>Terminar</h3>
+
+              <p>
+                Recupera poco a poco la atención al lugar
+                en el que te encuentras y a tu cuerpo.
+              </p>
+
+              <p>
+                Puedes realizar algún pequeño movimiento,
+                cambiar de postura o mirar a tu alrededor.
+              </p>
+
+              <p>
+                Cuando lo desees, continúa con lo que
+                estabas haciendo.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <p class="nota-practica">
+          Recuerda: esta guía es una referencia flexible.
+          Puedes adaptarla a tus circunstancias y utilizar
+          solamente aquellas partes que te resulten útiles.
+        </p>
+
+      </section>
+
+      <!-- VOLVER AL RECORRIDO -->
 
       <div class="navegacion-sesion">
         <a href="/experiencias/de-observar-a-elegir/">
