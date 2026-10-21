@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>S2 · Distinguir y reconocer | De observar a elegir</title>
+
+<meta name="description" content="Segunda sesión del curso De observar a elegir: distinguir observaciones e interpretaciones y reconocer nuestra experiencia interna.">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+
+body{
+  margin:0;
+  background:#efe6e4;
+  color:#1f2328;
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.75;
+}
+
+a{color:inherit}
+
+.contenedor{
+  width:min(100% - 40px,980px);
+  margin:auto;
+}
+
+.navegacion{
+  padding:22px 0;
+  border-bottom:1px solid #cfc8bf;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.9rem;
+}
+
+.menu{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.menu a{text-decoration:none}
+.menu a:hover{opacity:.65}
+.menu .activo{font-weight:700}
+
+.hero{
+  padding:82px 0 66px;
+  text-align:center;
+  border-bottom:1px solid #cfc8bf;
+}
+
+.ceja{
+  margin:0 0 15px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1rem;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+  color:#6f664c;
+}
+
+h1{
+  max-width:760px;
+  margin:0 auto 13px;
+  font-size:clamp(2.6rem,7vw,4.8rem);
+  line-height:1.06;
+  font-weight:400;
+}
+
+.subtitulo{
+  margin:0;
+  font-size:1.15rem;
+  color:#56514a;
+}
+
+main{padding:48px 0 105px}
+
+.contenido{
+  max-width:720px;
+  margin:auto;
+}
+
+.volver{
+  display:inline-block;
+  margin-bottom:42px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.86rem;
+  text-decoration:none;
+  color:#6f664c;
+}
+
+.indice{
+  margin-bottom:82px;
+  padding:26px 0;
+  border-top:1px solid #cfc8bf;
+  border-bottom:1px solid #cfc8bf;
+}
+
+.indice-titulo{
+  margin:0 0 18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#6f664c;
+}
+
+.indice-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  column-gap:34px;
+}
+
+.indice a{
+  display:flex;
+  gap:13px;
+  padding:12px 0;
+  border-top:1px solid rgba(207,200,191,.65);
+  text-decoration:none;
+}
+
+.indice a:nth-child(-n+2){border-top:0}
+
+.indice-numero{
+  flex:0 0 auto;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.76rem;
+  color:#6f664c;
+}
+
+.indice-texto{
+  font-size:.98rem;
+  line-height:1.4;
+}
+
+.bloque{padding:0 0 82px}
+
+.bloque+.bloque,
+.bloque+.cierre{
+  padding-top:72px;
+  border-top:1px solid #cfc8bf;
+}
+
+.numero-bloque{
+  margin:0 0 12px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.75rem;
+  letter-spacing:.15em;
+  color:#6f664c;
+}
+
+.bloque h2,
+.cierre h2{
+  margin:0 0 25px;
+  font-size:clamp(2rem,5vw,2.8rem);
+  line-height:1.15;
+  font-weight:400;
+}
+
+.bloque h3{
+  margin:34px 0 12px;
+  font-size:1.28rem;
+  font-weight:400;
+  line-height:1.35;
+}
+
+.bloque p,
+.cierre p{margin:0 0 20px}
+
+.destacado{
+  margin:32px 0!important;
+  padding:20px 0;
+  border-top:1px solid #cfc8bf;
+  border-bottom:1px solid #cfc8bf;
+  font-size:1.2rem;
+  line-height:1.55;
+  color:#514b3d;
+}
+
+.recurso-pendiente{
+  margin:30px 0;
+  padding:26px;
+  border:1px solid #cfc8bf;
+}
+
+.recurso-pendiente .etiqueta{
+  margin:0 0 7px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:#6f664c;
+}
+
+.recurso-pendiente .titulo-recurso{
+  margin:0 0 6px;
+  font-size:1.18rem;
+}
+
+.recurso-pendiente p:last-child{margin-bottom:0}
+
+.cierre{padding-bottom:82px}
+
+.cierre h3{
+  margin:30px 0 5px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.86rem;
+  letter-spacing:.09em;
+  color:#6f664c;
+}
+
+.idea-final{
+  margin-top:36px;
+  padding:34px 0 6px;
+  border-top:1px solid #cfc8bf;
+  text-align:center;
+  font-size:clamp(1.4rem,4vw,1.9rem);
+  line-height:1.55;
+}
+
+.navegacion-sesion{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:10px;
+  padding-top:30px;
+  border-top:1px solid #cfc8bf;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.86rem;
+}
+
+.navegacion-sesion a{
+  text-decoration:none;
+  color:#6f664c;
+}
+
+footer{
+  padding:34px 20px;
+  border-top:1px solid #cfc8bf;
+  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.82rem;
+  color:#6b6b6b;
+}
+
+@media(max-width:700px){
+  .contenedor{width:min(100% - 28px,980px)}
+  .navegacion{padding:18px 0}
+  .menu{gap:13px 17px;font-size:.82rem}
+  .hero{padding:64px 0 52px}
+  main{padding-top:36px;padding-bottom:78px}
+  .volver{margin-bottom:32px}
+  .indice{margin-bottom:65px}
+  .indice-grid{grid-template-columns:1fr}
+
+  .indice a,
+  .indice a:nth-child(-n+2){
+    border-top:1px solid rgba(207,200,191,.65);
+  }
+
+  .indice a:first-child{border-top:0}
+  .bloque{padding-bottom:65px}
+
+  .bloque+.bloque,
+  .bloque+.cierre{padding-top:58px}
+
+  .recurso-pendiente{padding:22px 19px}
+  .cierre{padding-bottom:65px}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navegacion" aria-label="Navegación principal">
+  <div class="contenedor">
+    <div class="menu">
+      <a href="/">Inicio</a>
+      <a href="/facilitacion/">Facilitación emocional</a>
+      <a href="/reiki/">Reiki</a>
+      <a class="activo" href="/experiencias/">Experiencias</a>
+      <a href="/videoblog/">Videoblog</a>
+      <a href="/libro/">Libros</a>
+      <a href="/sobre-mi/">Sobre mí</a>
+      <a href="/contacto/">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="contenedor">
+    <p class="ceja">S2 · Distinguir y reconocer</p>
+    <h1>Distinguir y reconocer</h1>
+    <p class="subtitulo">De la atención a nuestra experiencia interna</p>
+  </div>
+</header>
+
+<main class="contenedor">
+<div class="contenido">
+
+<a class="volver" href="/experiencias/de-observar-a-elegir/">
+  ← De observar a elegir
+</a>
+
+<nav class="indice" aria-label="Contenido de la sesión">
+  <p class="indice-titulo">En esta sesión</p>
+
+  <div class="indice-grid">
+    <a href="#atencion">
+      <span class="indice-numero">01</span>
+      <span class="indice-texto">De la atención a la experiencia interna</span>
+    </a>
+
+    <a href="#interpretar">
+      <span class="indice-numero">02</span>
+      <span class="indice-texto">Observar, interpretar y recibir información</span>
+    </a>
+
+    <a href="#historias">
+      <span class="indice-numero">03</span>
+      <span class="indice-texto">Las historias que nos contamos</span>
+    </a>
+
+    <a href="#automatico">
+      <span class="indice-numero">04</span>
+      <span class="indice-texto">Cuando funcionamos en automático</span>
+    </a>
+
+    <a href="#referencias">
+      <span class="indice-numero">05</span>
+      <span class="indice-texto">Reconocer lo que ocurre en nosotros</span>
+    </a>
+
+    <a href="#practica">
+      <span class="indice-numero">06</span>
+      <span class="indice-texto">Práctica guiada · Reconocer lo que está presente</span>
+    </a>
+
+    <a href="#recordar">
+      <span class="indice-numero">07</span>
+      <span class="indice-texto">Para recordar</span>
+    </a>
+  </div>
+</nav>
+
+<!-- APARTADO 01 -->
+
+<section class="bloque" id="atencion">
+
+<p class="numero-bloque">01</p>
+<h2>De la atención a la experiencia interna</h2>
+
+<p>En nuestra primera sesión comenzamos explorando algo sencillo: nuestra capacidad para prestar atención, reconocer cuándo se desplaza y, cuando resulta posible y oportuno, dirigirla nuevamente hacia aquello que estábamos observando.</p>
+
+<p>Descubrimos un movimiento que podemos seguir reconociendo en nuestra vida cotidiana:</p>
+
+<p class="destacado">ATENDER → DISTRAERSE → DARSE CUENTA → VOLVER</p>
+
+<p>Pero ¿qué ocurre cuando nuestra atención se desplaza hacia algo que nos afecta personalmente?</p>
+
+<p>Imaginemos que alguien nos hace un comentario desagradable. La conversación termina, seguimos con nuestras actividades y, sin embargo, podemos continuar pensando en lo ocurrido.</p>
+
+<p>Quizá recordemos las palabras que hemos escuchado, intentemos comprender qué quería decir aquella persona o imaginemos lo que podríamos haber respondido.</p>
+
+<p>También podemos experimentar alguna emoción, notar tensión en el cuerpo o sentir ganas de hacer algo.</p>
+
+<p>En ocasiones, una situación que apenas ha durado unos segundos puede continuar ocupando nuestra atención durante mucho más tiempo.</p>
+
+<p>No siempre ocurre así. Algunas experiencias pasan rápidamente y otras permanecen presentes durante un tiempo.</p>
+
+<p>Tampoco elegimos necesariamente los primeros pensamientos, emociones o impulsos que aparecen ante una situación.</p>
+
+<p>Lo que podemos intentar es reconocerlos.</p>
+
+<p>Y aquí encontramos una distinción importante:</p>
+
+<p class="destacado">Observar lo que experimentamos no significa que tengamos que eliminarlo, reprimirlo o modificarlo inmediatamente.</p>
+
+<p>Podemos reconocer que seguimos enfadados sin que el enfado desaparezca por ello.</p>
+
+<p>Podemos advertir que estamos preocupados sin conseguir dejar de preocuparnos en ese mismo instante.</p>
+
+<p>Darnos cuenta no garantiza que nuestra experiencia cambie, pero nos permite empezar a reconocer algo que quizá estaba ocurriendo sin que le prestáramos demasiada atención.</p>
+
+</section>
+
+<!-- APARTADO 02 -->
+
+<section class="bloque" id="interpretar">
+
+<p class="numero-bloque">02</p>
+<h2>Observar, interpretar y recibir información</h2>
+
+<p>Durante la sesión hemos realizado una pequeña experiencia de observación.</p>
+
+<p>Imaginábamos que habíamos quedado con unos amigos para tomar un café y, mientras esperábamos, observábamos a un hombre sentado en la calle, rodeado de algunas pertenencias.</p>
+
+<p>A partir de aquella imagen podían surgir diferentes explicaciones.</p>
+
+<p>Quizá estaba esperando ayuda porque había tenido una avería. Tal vez atravesaba una situación personal complicada.</p>
+
+<p>Después escuchábamos dos versiones diferentes sobre lo que supuestamente le había ocurrido.</p>
+
+<p>Pero había algo que seguíamos sin saber:</p>
+
+<p class="destacado">¿Qué le estaba ocurriendo realmente a aquel hombre?</p>
+
+<p>La imagen nos ofrecía cierta información, pero ninguna de las explicaciones había quedado confirmada.</p>
+
+<p>Esta experiencia nos permitió distinguir tres procesos que pueden mezclarse fácilmente en nuestra vida cotidiana.</p>
+
+<h3>Lo que observamos</h3>
+
+<p>Aquello que podemos percibir directamente.</p>
+
+<p>En nuestro ejemplo, veíamos a un hombre sentado en la calle, con algunas pertenencias a su alrededor.</p>
+
+<h3>Lo que interpretamos</h3>
+
+<p>Las explicaciones, suposiciones o significados que construimos a partir de lo observado.</p>
+
+<p>Podíamos imaginar diferentes motivos para explicar su situación, pero no sabíamos si eran acertados.</p>
+
+<h3>La información que recibimos</h3>
+
+<p>Lo que otras personas nos cuentan sobre una situación.</p>
+
+<p>Esa información puede resultar útil, pero también puede estar incompleta o no haber sido comprobada.</p>
+
+<p class="destacado">Observar, interpretar y recibir información no son lo mismo, aunque puedan complementarse.</p>
+
+<p>Esto no significa que interpretar sea algo negativo.</p>
+
+<p>Las interpretaciones nos ayudan a comprender situaciones, relacionar información y desenvolvernos en nuestra vida cotidiana.</p>
+
+<p>Algunas pueden ser acertadas y otras no.</p>
+
+<p>La cuestión no es dejar de interpretar, sino empezar a reconocer cuándo estamos observando algo directamente y cuándo estamos construyendo una explicación sobre ello.</p>
+
+<p>Porque una explicación que nos parece convincente no siempre es un hecho confirmado.</p>
+
+</section>
+
+<!-- APARTADO 03 -->
+
+<section class="bloque" id="historias">
+
+<p class="numero-bloque">03</p>
+<h2>Las historias que nos contamos</h2>
+
+<p>Las interpretaciones no proceden únicamente de lo que escuchamos de otras personas.</p>
+
+<p>También construimos nuestras propias explicaciones sobre lo que ocurre, sobre quienes nos rodean y sobre nosotros mismos.</p>
+
+<p>Imaginemos que enviamos un mensaje y no recibimos respuesta.</p>
+
+<p>Podemos pensar que la otra persona está ocupada, que no ha visto el mensaje o que quizá está molesta con nosotros.</p>
+
+<p>Son explicaciones posibles, pero mientras no dispongamos de más información, no sabemos necesariamente cuál es la acertada.</p>
+
+<p>Algo parecido puede ocurrir con determinados pensamientos que aparecen repetidamente en nuestra vida cotidiana.</p>
+
+<p class="destacado">
+  «Siempre me pasa lo mismo».<br>
+  «Tengo que hacerlo yo todo».<br>
+  «Nunca me tienen en cuenta».
+</p>
+
+<p>A veces, estas frases expresan una interpretación que hemos construido a partir de diferentes experiencias.</p>
+
+<p>Y cuando una manera de interpretar se repite con frecuencia, puede llegar a resultarnos tan familiar que apenas nos detenemos a observarla.</p>
+
+<p>Podemos terminar dando por cierta una explicación sin distinguir claramente qué parte corresponde a lo ocurrido y qué parte hemos añadido nosotros.</p>
+
+<p>Esto no significa que nuestros pensamientos habituales sean necesariamente falsos.</p>
+
+<p class="destacado">Que una interpretación se repita no demuestra que sea verdadera, pero tampoco que sea falsa.</p>
+
+<p>Lo que estamos explorando es la posibilidad de reconocer que estamos interpretando.</p>
+
+<p>No necesitamos discutir con cada pensamiento ni comprobar continuamente si tenemos razón.</p>
+
+<p>Podemos empezar simplemente por advertir que, además de lo que ha ocurrido, también existe una historia que nos estamos contando sobre ello.</p>
+
+</section>
+
+<!-- APARTADO 04 -->
+
+<section class="bloque" id="automatico">
+
+<p class="numero-bloque">04</p>
+<h2>Cuando funcionamos en automático</h2>
+
+<p>Muchas de nuestras actividades cotidianas se desarrollan de manera habitual, sin que tengamos que prestar atención consciente a cada pequeño movimiento.</p>
+
+<p>Ocurre cuando realizamos tareas conocidas, seguimos determinadas rutinas o llevamos a cabo acciones que hemos repetido muchas veces.</p>
+
+<p>Estos automatismos pueden resultar muy útiles.</p>
+
+<p>Nos permiten desenvolvernos con mayor facilidad sin tener que decidir conscientemente cada detalle de lo que hacemos.</p>
+
+<p>Pero también podemos desarrollar maneras habituales de interpretar o responder ante determinadas situaciones.</p>
+
+<p>Por ejemplo, cuando recibimos una crítica, quizá tendamos a justificarnos inmediatamente, guardar silencio o responder a la defensiva.</p>
+
+<p>Ante una dificultad, puede que aparezca el pensamiento «tengo que hacerlo yo todo», acompañado de frustración, tensión o ganas de asumir nuevamente todas las responsabilidades.</p>
+
+<p>Algunas de estas respuestas pueden resultarnos tan familiares que apenas nos damos cuenta de que están apareciendo.</p>
+
+<p class="destacado">Reconocer una respuesta habitual no significa que sea incorrecta ni que tengamos que cambiarla.</p>
+
+<p>Tampoco todas las reacciones rápidas o espontáneas son necesariamente automatismos aprendidos.</p>
+
+<p>Lo que podemos intentar es prestar atención a nuestras maneras habituales de responder y reconocer cuándo aparecen.</p>
+
+<p>Por ahora, no necesitamos decidir qué hacer con ellas.</p>
+
+<p>Ese será uno de los terrenos que exploraremos más adelante.</p>
+
+<p>En esta sesión estamos trabajando algo anterior:</p>
+
+<p class="destacado">Darnos cuenta de que algunas de nuestras respuestas pueden aparecer de manera habitual, incluso sin que las hayamos elegido conscientemente.</p>
+
+</section>
+
+<!-- APARTADO 05 -->
+
+<section class="bloque" id="referencias">
+
+<p class="numero-bloque">05</p>
+<h2>Reconocer lo que ocurre en nosotros</h2>
+
+<p>Hasta ahora hemos explorado cómo interpretamos determinadas situaciones y cómo algunas respuestas pueden resultarnos familiares.</p>
+
+<p>Pero ¿en qué podemos fijarnos cuando queremos observar nuestra propia experiencia?</p>
+
+<p>Durante la sesión hemos utilizado cuatro referencias.</p>
+
+<h3>Pensamientos</h3>
+
+<p>Son las palabras, imágenes, recuerdos, anticipaciones o pequeñas historias que pueden aparecer en nuestra mente.</p>
+
+<p>Podemos recordar una conversación, imaginar algo que todavía no ha ocurrido o repetirnos una frase conocida.</p>
+
+<p>No necesitamos detener todos esos pensamientos.</p>
+
+<p>Podemos intentar reconocer que están apareciendo.</p>
+
+<h3>Emociones</h3>
+
+<p>Podemos experimentar alegría, tristeza, miedo, enfado, inquietud y muchas otras experiencias emocionales.</p>
+
+<p>A veces nos resulta sencillo reconocer cómo nos sentimos.</p>
+
+<p>En otras ocasiones, quizá solo percibamos que algo nos ocurre sin encontrar una palabra que lo describa claramente.</p>
+
+<p>No necesitamos ponerle nombre a todo lo que sentimos.</p>
+
+<p>También podemos observar cómo nos encontramos sin identificar una emoción concreta.</p>
+
+<h3>Sensaciones corporales</h3>
+
+<p>Podemos notar tensión, calor, presión, agitación, molestias o cualquier otra sensación presente en nuestro cuerpo.</p>
+
+<p>Quizá percibamos los hombros tensos, cierta incomodidad en el estómago o simplemente el contacto de los pies con el suelo.</p>
+
+<p>No todas las sensaciones corporales están relacionadas con una emoción.</p>
+
+<p>Tampoco necesitamos encontrar una explicación para cada una de ellas.</p>
+
+<p>Podemos observarlas tal y como se presentan.</p>
+
+<h3>Impulsos</h3>
+
+<p>Son esas ganas de hacer algo que pueden aparecer en determinadas circunstancias.</p>
+
+<p>Podemos sentir ganas de responder a alguien, consultar el teléfono, levantarnos, mover una pierna o cambiar de postura.</p>
+
+<p>Y aquí aparece una distinción interesante:</p>
+
+<p class="destacado">Tener ganas de hacer algo y hacerlo no son exactamente lo mismo.</p>
+
+<p>Podemos reconocer un impulso sin que eso signifique que tengamos que impedirlo o llevarlo a cabo.</p>
+
+<p>Por ahora, simplemente estamos aprendiendo a identificar su presencia.</p>
+
+<h3>¿Aparecen por separado?</h3>
+
+<p>No necesariamente.</p>
+
+<p>Pensamientos, emociones, sensaciones corporales e impulsos pueden relacionarse entre sí.</p>
+
+<p>Imaginemos que esperamos una respuesta importante.</p>
+
+<p>Quizá aparezca el pensamiento «¿por qué no contesta?», sintamos cierta inquietud, notemos tensión en el estómago y tengamos ganas de consultar el teléfono repetidamente.</p>
+
+<p>Pero no siempre encontraremos estas cuatro referencias.</p>
+
+<p>Tampoco tienen que aparecer en un orden determinado.</p>
+
+<p class="destacado">No buscamos dividir nuestra experiencia en cuatro compartimentos, sino disponer de algunas referencias que puedan ayudarnos a observarla.</p>
+
+</section>
+
+<!-- APARTADO 06 -->
+
+<section class="bloque" id="practica">
+
+<p class="numero-bloque">06</p>
+<h2>Práctica guiada · Reconocer lo que está presente</h2>
+
+<p>Durante la sesión hemos realizado una práctica guiada para llevar estas ideas a nuestra propia experiencia.</p>
+
+<p>Comenzamos prestando atención al cuerpo y a la respiración, recuperando algunas de las referencias que ya habíamos utilizado en la primera sesión.</p>
+
+<p>Después dirigimos progresivamente nuestra atención hacia diferentes aspectos de lo que estábamos experimentando:</p>
+
+<p class="destacado">PENSAMIENTOS · EMOCIONES · SENSACIONES CORPORALES · IMPULSOS</p>
+
+<p>La intención no era encontrar necesariamente las cuatro referencias ni conseguir identificarlas con precisión.</p>
+
+<p>Tampoco necesitábamos recordar situaciones incómodas, provocar emociones o buscar pensamientos determinados.</p>
+
+<p>Simplemente intentamos reconocer algo de lo que estuviera presente en ese momento.</p>
+
+<p>En ocasiones, quizá pudimos observar alguna relación entre diferentes aspectos de nuestra experiencia.</p>
+
+<p>Por ejemplo, un pensamiento acompañado de inquietud o una sensación corporal relacionada con las ganas de movernos.</p>
+
+<p>Y quizá no encontramos ninguna relación especialmente clara.</p>
+
+<p>Ambas posibilidades forman parte de la experiencia.</p>
+
+<p>No necesitamos llegar a conclusiones ni encontrar explicaciones.</p>
+
+<h3>Volver a realizar la práctica</h3>
+
+<p>Si quieres recuperar esta experiencia, aquí podrás encontrar próximamente su versión en audio.</p>
+
+<p>Busca una postura suficientemente cómoda y recuerda que puedes mantener los ojos abiertos, cambiar de posición o detener la práctica cuando lo necesites.</p>
+
+<div class="recurso-pendiente">
+  <p class="etiqueta">Práctica guiada · Audio próximamente</p>
+  <p class="titulo-recurso">▶ Reconocer lo que está presente</p>
+  <p>Reservamos este espacio para la grabación. Todavía no hay un reproductor disponible.</p>
+</div>
+
+<p>No necesitas relajarte, dejar la mente en blanco ni conseguir ningún resultado concreto.</p>
+
+<p>Si reconoces algún pensamiento, emoción, sensación o impulso, puedes observarlo durante unos instantes.</p>
+
+<p>Y si no encuentras nada especialmente claro, tampoco necesitas buscarlo.</p>
+
+<p class="destacado">La práctica consiste en prestar atención a lo que está ocurriendo, no en provocar una experiencia determinada.</p>
+
+</section>
+
+<!-- APARTADO 07 -->
+
+<section class="bloque" id="recordar">
+
+<p class="numero-bloque">07</p>
+<h2>Para recordar</h2>
+
+<h3>Nuestra atención puede quedarse ocupada</h3>
+
+<p>Algunas situaciones continúan presentes en nuestros pensamientos o emociones incluso después de haber terminado.</p>
+
+<p>Podemos intentar reconocer qué está ocupando nuestra atención.</p>
+
+<h3>Observar e interpretar son procesos diferentes</h3>
+
+<p>Lo que percibimos directamente, las explicaciones que construimos y la información que recibimos no son exactamente lo mismo.</p>
+
+<p>Distinguirlos no significa dejar de interpretar.</p>
+
+<h3>Algunas historias nos resultan familiares</h3>
+
+<p>Podemos repetir determinadas interpretaciones hasta llegar a darlas por ciertas.</p>
+
+<p>Reconocer que estamos interpretando puede ayudarnos a distinguir mejor nuestras suposiciones de los hechos que conocemos.</p>
+
+<h3>No todos los automatismos necesitan cambiarse</h3>
+
+<p>Muchas respuestas habituales son útiles y forman parte de nuestra vida cotidiana.</p>
+
+<p>Podemos reconocerlas sin calificarlas inmediatamente como buenas o malas.</p>
+
+<h3>Tenemos diferentes referencias para observarnos</h3>
+
+<p class="destacado">Pensamientos · Emociones · Sensaciones corporales · Impulsos</p>
+
+<p>No necesitamos reconocerlas todas ni encontrar relaciones entre ellas.</p>
+
+<h3>Reconocer no significa eliminar</h3>
+
+<p>Podemos darnos cuenta de que estamos experimentando algo sin que desaparezca por ello.</p>
+
+<p>Y observar nuestra experiencia tampoco significa resignarnos o renunciar a actuar cuando una situación lo requiere.</p>
+
+</section>
+
+<!-- CIERRE -->
+
+<section class="cierre" id="cierre">
+
+<p class="numero-bloque">UNA IDEA PARA LLEVARNOS</p>
+
+<h2>De observar a reconocer</h2>
+
+<p>En nuestra primera sesión aprendimos a detenernos durante unos instantes y observar dónde estaba nuestra atención.</p>
+
+<p>En esta segunda sesión hemos ampliado esa observación.</p>
+
+<p>Hemos explorado cómo interpretamos algunas situaciones, cómo construimos historias sobre lo que ocurre y cómo determinadas respuestas pueden resultarnos familiares.</p>
+
+<p>También hemos descubierto algunas referencias para reconocer lo que pensamos, sentimos y experimentamos en nuestro cuerpo, así como las ganas de hacer algo que pueden aparecer.</p>
+
+<p>Podemos resumir este recorrido en tres ideas:</p>
+
+<h3>PARAR Y NOTAR</h3>
+<p>Reconocer dónde está nuestra atención y advertir sus desplazamientos.</p>
+
+<h3>DISTINGUIR</h3>
+<p>Diferenciar lo que observamos de las interpretaciones que construimos.</p>
+
+<h3>RECONOCER</h3>
+<p>Identificar algunos pensamientos, emociones, sensaciones corporales e impulsos que pueden aparecer en nuestra experiencia.</p>
+
+<p>No son pasos que debamos seguir obligatoriamente ni siempre en el mismo orden.</p>
+
+<p>Son referencias que podemos utilizar cuando nos resulte útil prestar atención a lo que estamos viviendo.</p>
+
+<p>En nuestra próxima sesión, <strong>«Pausar y elegir»</strong>, exploraremos qué posibilidades pueden aparecer cuando conseguimos reconocer lo que ocurre e introducir una pausa antes de responder.</p>
+
+<p>Pero, por ahora, podemos quedarnos con una idea:</p>
+
+<div class="idea-final">
+  Reconocer lo que ocurre no implica tener que cambiarlo inmediatamente.
+</div>
+
+</section>
+
+<div class="navegacion-sesion">
+  <a href="/experiencias/de-observar-a-elegir/sesion-1/">
+    ← Sesión 1
+  </a>
+
+  <a href="/experiencias/de-observar-a-elegir/">
+    Volver al recorrido ↑
+  </a>
+</div>
+
+</div>
+</main>
+
+<footer>© Jose Montesinos</footer>
+
+</body>
+</html>
