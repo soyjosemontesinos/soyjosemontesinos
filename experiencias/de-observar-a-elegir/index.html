@@ -657,51 +657,13 @@
     © Jose Montesinos
   </footer>
 
-  <script>
-    const puerta = document.getElementById("puerta-acceso");
-    const recorrido = document.getElementById("recorrido");
-    const formulario = document.getElementById("formulario-acceso");
-    const campoClave = document.getElementById("clave");
-    const mensajeError = document.getElementById("mensaje-error");
+<script>
+  const puerta = document.getElementById("puerta-acceso");
+  const recorrido = document.getElementById("recorrido");
 
-    const accesoGuardado =
-      localStorage.getItem("acceso_de_observar_a_elegir") === "si";
-
-    function mostrarRecorrido() {
-      puerta.style.display = "none";
-      recorrido.classList.add("visible");
-    }
-
-    if (accesoGuardado) {
-      mostrarRecorrido();
-    }
-
-    formulario.addEventListener("submit", function(evento) {
-      evento.preventDefault();
-
-      const claveIntroducida = campoClave.value
-        .trim()
-        .toLowerCase();
-
-      const claveCodificada = btoa(
-        unescape(encodeURIComponent(claveIntroducida))
-      );
-
-      if (claveCodificada === "aW50ZWdyYXI=") {
-        localStorage.setItem(
-          "acceso_de_observar_a_elegir",
-          "si"
-        );
-
-        mensajeError.textContent = "";
-        mostrarRecorrido();
-      } else {
-        mensajeError.textContent =
-          "La clave no es correcta. Comprueba que la has escrito bien.";
-        campoClave.select();
-      }
-    });
-  </script>
+  puerta.style.display = "none";
+  recorrido.classList.add("visible");
+</script>
 
 </body>
 </html>
